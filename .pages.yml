@@ -1,0 +1,156 @@
+# Konfiguracja panelu Pages CMS (https://pagescms.org) – edycja treści bez kodu.
+# Pracownik loguje się na app.pagescms.org kontem GitHub z dostępem do tego repo.
+media:
+  input: zdjecia
+  output: zdjecia
+  categories: [image]
+
+content:
+  - name: ustawienia
+    label: Ustawienia salonu
+    type: file
+    path: data/ustawienia.json
+    fields:
+      - { name: telefon, label: Telefon (wyświetlany), type: string }
+      - { name: telefon_link, label: Telefon (do wybierania, np. +48600102689), type: string }
+      - { name: adres_ulica, label: Ulica i piętro, type: string }
+      - { name: adres_miasto, label: Kod i miasto, type: string }
+      - { name: godziny, label: Godziny otwarcia, type: string }
+      - { name: parking, label: Parking (opis), type: string }
+      - { name: booksy, label: Link do Booksy, type: string }
+      - { name: instagram, label: Link Instagram, type: string }
+      - { name: facebook, label: Link Facebook, type: string }
+      - { name: ocena_booksy, label: Ocena Booksy (np. 5,0), type: string }
+      - { name: opinie_booksy, label: Liczba opinii Booksy, type: number }
+      - { name: ocena_google, label: Ocena Google, type: string }
+      - { name: opinie_google, label: Liczba opinii Google, type: number }
+      - { name: pasek_promo_wlaczony, label: Pokaż złoty pasek na górze strony, type: boolean }
+      - { name: pasek_promo, label: Tekst paska, type: string }
+      - { name: pasek_promo_link, label: Link paska, type: string }
+      - { name: nazwa, label: Nazwa, type: string, hidden: true }
+      - { name: wlasciciel, label: Właścicielka, type: string }
+      - { name: rok_zalozenia, label: Rok założenia, type: number }
+      - { name: godziny_sobota, label: Sobota, type: string }
+
+  - name: promocje
+    label: Promocje
+    description: Promocje widoczne na stronie głównej. Po dacie ważności znikają same.
+    type: file
+    path: data/promocje.json
+    list: true
+    fields:
+      - { name: nazwa, label: Zabieg, type: string }
+      - { name: cena_promo, label: Cena promocyjna (zł), type: number }
+      - { name: cena_std, label: Cena standardowa (zł), type: number }
+      - { name: wazne_do, label: Ważne do, type: date }
+      - { name: link, label: Link (zwykle Booksy), type: string }
+
+  - name: opinie
+    label: Opinie klientek
+    type: file
+    path: data/opinie.json
+    list: true
+    fields:
+      - { name: tekst, label: Treść opinii, type: text }
+      - { name: autor, label: Imię, type: string }
+      - { name: zrodlo, label: Źródło, type: select, options: { values: [Google, Booksy, Facebook, Instagram] } }
+      - { name: ocena, label: Gwiazdki, type: number, options: { min: 1, max: 5 } }
+
+  - name: galeria
+    label: Portfolio (galeria)
+    type: file
+    path: data/galeria.json
+    list: true
+    fields:
+      - { name: plik, label: Zdjęcie, type: image }
+      - { name: opis, label: Podpis, type: string }
+      - { name: kategoria, label: Kategoria, type: select, options: { values: [rzesy, brwi, twarz, akademia, salon] } }
+
+  - name: zespol
+    label: Zespół
+    type: file
+    path: data/zespol.json
+    list: true
+    fields:
+      - { name: imie, label: Imię i nazwisko, type: string }
+      - { name: rola, label: Rola, type: string }
+      - { name: foto, label: Zdjęcie, type: image }
+      - { name: opis, label: Krótki opis, type: text }
+
+  - name: cennik
+    label: Cennik
+    description: Ceny na całej stronie. Zmiana tutaj = zmiana na stronie po ok. minucie.
+    type: file
+    path: data/cennik.json
+    fields:
+      - name: rzesy_od_zera
+        label: Rzęsy – nowe (od zera)
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: cena, label: Cena (zł), type: number }
+          - { name: czas, label: Czas (min), type: number }
+      - name: rzesy_uzupelnienie
+        label: Rzęsy – uzupełnienia
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: t1, label: do 1 tyg. (zł), type: number }
+          - { name: t2, label: do 2 tyg. (zł), type: number }
+          - { name: t3, label: do 3 tyg. (zł), type: number }
+      - name: rzesy_dodatki
+        label: Rzęsy – dodatki
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: cena, label: Cena (zł), type: number }
+          - { name: dopisek, label: Dopisek, type: string }
+          - { name: czas, label: Czas (min), type: number }
+      - name: laminacja_brwi
+        label: Laminacja, brwi, usta
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: cena, label: Cena (zł lub tekst), type: string }
+          - { name: czas, label: Czas (min), type: number }
+      - name: twarz
+        label: Zabiegi na twarz
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: twarz, label: Twarz (zł), type: number }
+          - { name: szyja, label: + szyja (zł), type: number }
+          - { name: dekolt, label: + dekolt (zł), type: number }
+          - { name: czas, label: Czas (min), type: number }
+          - { name: slug, label: Podstrona (nie zmieniać), type: string }
+      - name: depilacja
+        label: Depilacja
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: cena, label: Cena (zł), type: number }
+          - { name: czas, label: Czas (min), type: number }
+      - name: pakiety
+        label: Pakiety
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: twarz, label: Twarz (zł), type: number }
+          - { name: dekolt, label: Twarz+szyja+dekolt (zł), type: number }
+      - name: szkolenia
+        label: Szkolenia
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: cena, label: Cena (zł), type: number }
+          - { name: czas, label: Czas, type: string }
+          - { name: slug, label: Podstrona (nie zmieniać), type: string }
+      - { name: uwaga, label: Notatka, type: string, hidden: true }

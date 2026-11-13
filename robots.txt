@@ -1,0 +1,3 @@
+# Na czas budowy: blokada indeksowania. W dniu startu zamienić na: Allow: / + Sitemap.
+User-agent: *
+Disallow: /
