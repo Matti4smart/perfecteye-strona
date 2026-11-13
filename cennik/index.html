@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cennik – PerfectEye Katowice | rzęsy, brwi, zabiegi na twarz, szkolenia</title>
+<meta name="description" content="Aktualny cennik salonu PerfectEye w Katowicach: przedłużanie rzęs od 199 zł, uzupełnienia, laminacja, henna, oczyszczanie wodorowe, lifting RF, szkolenia. Ceny zgodne z Booksy.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.perfecteye.pl/cennik/">
+<link rel="icon" href="../zdjecia/favicon.svg" type="image/svg+xml">
+<script src="../assets/head.js" data-root="../"></script>
+</head>
+<body data-page="cennik/">
+<div id="chrome-top"></div>
+<nav class="wrap crumbs" aria-label="Ścieżka"><a href="../">Strona główna</a> / <span style="color:var(--text)">Cennik</span></nav>
+
+<section class="section tight"><div class="wrap" style="max-width:1040px">
+  <div class="head"><p class="eyebrow">Cennik</p><h1 style="font-size:clamp(40px,6vw,64px)">Ceny standardowe</h1>
+  <p class="muted">Ceny zgodne z Booksy. Aktualne promocje i wolne terminy znajdziesz podczas rezerwacji. Przy rezerwacji online pobieramy przedpłatę, która gwarantuje Twój termin.</p></div>
+
+  <h2 id="rzesy" style="font-size:36px;color:var(--gold);margin-bottom:8px">Przedłużanie rzęs</h2>
+  <p class="muted" style="margin-bottom:22px">Im szybciej wracasz na uzupełnienie, tym mniej płacisz. Stałe klientki wracają średnio co 2–3 tygodnie.</p>
+  <div class="center"><div class="toggle" role="tablist" aria-label="Rodzaj wizyty">
+    <button class="on" role="tab" aria-selected="true" data-mode="0">Nowe rzęsy</button>
+    <button role="tab" aria-selected="false" data-mode="1">Uzupełnienie do 2 tyg.</button>
+    <button role="tab" aria-selected="false" data-mode="2">Uzupełnienie do 3 tyg.</button>
+  </div></div>
+  <p class="center muted2" id="mode-note" style="font-size:14px;margin-top:-14px;margin-bottom:22px"></p>
+  <div id="tab-rzesy"></div>
+
+  <h3 style="margin:48px 0 8px;color:var(--gold)">Dodatki do rzęs</h3><div id="tab-dodatki"></div>
+
+  <h2 id="laminacja" style="font-size:36px;color:var(--gold);margin:64px 0 8px">Laminacja, brwi, usta</h2><div id="tab-brwi"></div>
+
+  <h2 id="twarz" style="font-size:36px;color:var(--gold);margin:64px 0 8px">Zabiegi na twarz</h2>
+  <p class="muted" style="margin-bottom:22px">Cena za twarz; w nawiasie z szyją oraz z szyją i dekoltem.</p>
+  <div id="tab-twarz"></div>
+  <h3 style="margin:40px 0 8px;color:var(--gold)">Pakiety 4 zabiegów</h3><p class="muted2" style="font-size:14px">Twarz / twarz + szyja + dekolt. Pakiet to oszczędność ok. 4–8% i gwarancja serii, która daje trwały efekt.</p><div id="tab-pakiety"></div>
+  <h3 style="margin:40px 0 8px;color:var(--gold)">Depilacja woskiem</h3><div id="tab-depilacja"></div>
+
+  <h2 id="szkolenia" style="font-size:36px;color:var(--gold);margin:64px 0 8px">Szkolenia – Akademia PerfectEye</h2><div id="tab-szkolenia"></div>
+
+  <p class="center" style="margin-top:48px"><a class="btn" data-href-u="booksy" href="https://perfecteye.booksy.com" data-conv="booksy" rel="noopener">Sprawdź wolne terminy w Booksy</a></p>
+</div></section>
+
+<div id="chrome-bottom"></div>
+<script src="../assets/site.js"></script>
+<script>
+(async () => {
+  const c = await PE.load('cennik');
+  const row = (n, pr, x = '', href = '') => `<div class="price-row"><span>${href ? `<a href="${href}" style="color:var(--text);text-decoration:none">${n}</a>` : n}</span><span class="dots"></span><b>${pr}${x ? ` <small>${x}</small>` : ''}</b></div>`;
+  const notes = ['Pierwsze założenie lub ponowne założenie od zera po ściągnięciu.', 'Uzupełnienie rzęs do 14 dni od poprzedniej wizyty.', 'Uzupełnienie rzęs między 15. a 21. dniem od poprzedniej wizyty. Po 3 tygodniach – cena jak za nowe rzęsy.'];
+  const renderRzesy = mode => {
+    document.getElementById('mode-note').textContent = notes[mode];
+    document.getElementById('tab-rzesy').innerHTML = mode === 0
+      ? c.rzesy_od_zera.map(r => row(r.nazwa, PE.zl(r.cena), r.czas + ' min')).join('')
+      : c.rzesy_uzupelnienie.map(r => row(r.nazwa, PE.zl(mode === 1 ? r.t2 : r.t3), 'do 1 tyg. ' + r.t1 + ' zł')).join('');
+  };
+  renderRzesy(0);
+  document.querySelectorAll('.toggle button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.toggle button').forEach(x => { x.classList.remove('on'); x.setAttribute('aria-selected', 'false'); });
+    b.classList.add('on'); b.setAttribute('aria-selected', 'true'); renderRzesy(+b.dataset.mode);
+  }));
+  document.getElementById('tab-dodatki').innerHTML = c.rzesy_dodatki.map(r => row(r.nazwa, PE.zl(r.cena), r.dopisek || '')).join('');
+  document.getElementById('tab-brwi').innerHTML = c.laminacja_brwi.map(r => row(r.nazwa, PE.zl(r.cena))).join('');
+  document.getElementById('tab-twarz').innerHTML = c.twarz.map(r => row(r.nazwa, PE.zl(r.twarz), r.szyja ? `(${r.szyja} / ${r.dekolt} zł)` : '', r.slug ? `../twarz/${r.slug}/` : '')).join('');
+  document.getElementById('tab-pakiety').innerHTML = c.pakiety.map(r => row(r.nazwa, PE.zl(r.twarz), r.dekolt ? `/ ${r.dekolt} zł` : '')).join('');
+  document.getElementById('tab-depilacja').innerHTML = c.depilacja.map(r => row(r.nazwa, PE.zl(r.cena))).join('');
+  document.getElementById('tab-szkolenia').innerHTML = c.szkolenia.map(r => row(r.nazwa, PE.zl(r.cena), r.czas, `../akademia/${r.slug}/`)).join('');
+})();
+</script>
+</body>
+</html>
