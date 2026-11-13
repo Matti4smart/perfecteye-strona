@@ -1,9 +1,57 @@
 [
-  { "plik": "zdjecia/galeria/rzesy-1.jpg", "opis": "Rzęsy objętościowe – efekt po zabiegu", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-2.jpg", "opis": "Naturalne zagęszczenie rzęs", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-3.jpg", "opis": "Przedłużanie rzęs – w trakcie zabiegu", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-4.jpg", "opis": "Stylizacja rzęs – efekt", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-5.jpg", "opis": "Rzęsy i brwi – efekt końcowy", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-6.jpg", "opis": "Precyzyjna aplikacja rzęs", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/szkolenie-1.jpg", "opis": "Szkolenie w Akademii PerfectEye", "kategoria": "akademia" }
+  {
+    "plik": "zdjecia/galeria/rzesy-1.jpg",
+    "opis": "Rzęsy objętościowe – efekt po zabiegu",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/rzesy-2.jpg",
+    "opis": "Naturalne zagęszczenie rzęs",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/rzesy-3.jpg",
+    "opis": "Przedłużanie rzęs – w trakcie zabiegu",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/rzesy-4.jpg",
+    "opis": "Stylizacja rzęs – efekt",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/rzesy-5.jpg",
+    "opis": "Rzęsy i brwi – efekt końcowy",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/rzesy-6.jpg",
+    "opis": "Precyzyjna aplikacja rzęs",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/szkolenie-1.jpg",
+    "opis": "Szkolenie w Akademii PerfectEye",
+    "kategoria": "akademia"
+  },
+  {
+    "plik": "zdjecia/wodorowe/zabieg.jpg",
+    "opis": "Oczyszczanie wodorowe – zabieg w salonie",
+    "kategoria": "twarz"
+  },
+  {
+    "plik": "zdjecia/wodorowe/zabieg-urzadzenie.jpg",
+    "opis": "Oczyszczanie wodorowe – etap odżywiania ampułką",
+    "kategoria": "twarz"
+  },
+  {
+    "plik": "zdjecia/wodorowe/masaz.jpg",
+    "opis": "Oczyszczanie wodorowe – masaż głowicą",
+    "kategoria": "twarz"
+  },
+  {
+    "plik": "zdjecia/wodorowe/peeling.jpg",
+    "opis": "Oczyszczanie wodorowe – peeling kawitacyjny",
+    "kategoria": "twarz"
+  }
 ]
