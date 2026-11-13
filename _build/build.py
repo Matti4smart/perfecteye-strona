@@ -6,6 +6,16 @@ def rd(p): return json.load(open(os.path.join(ROOT, '_build', p), encoding='utf-
 def wr(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, 'w', encoding='utf-8').write(content)
+CEN = json.load(open(os.path.join(ROOT, 'data', 'cennik.json'), encoding='utf-8'))
+def booksy_names(key, slug):
+    seen = []
+    for r in CEN[key]:
+        if r.get('slug') == slug and r['nazwa'] not in seen: seen.append(r['nazwa'])
+    return seen
+def hint(names):
+    if not names: return ''
+    q = ' lub '.join(f'<b>„{html.escape(n)}”</b>' for n in names[:3])
+    return f'<p class="booksy-hint">W Booksy wybierz: {q}</p>'
 NOINDEX = '<meta name="robots" content="noindex, nofollow">'  # usunąć w dniu startu
 
 HEAD = '''<!doctype html>
@@ -16,7 +26,7 @@ HEAD = '''<!doctype html>
 <meta name="description" content="{meta}">
 {noindex}
 <link rel="canonical" href="https://www.perfecteye.pl/{path}/">
-<link rel="icon" href="../../zdjecia/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../favicon.ico" sizes="32x32">
 <script src="../../assets/head.js" data-root="../../"></script>
 {ld}
 </head>
@@ -27,7 +37,7 @@ HEAD = '''<!doctype html>
 FOOT = '''
 <section class="section center" style="background:linear-gradient(160deg,#2A2012 0%,#120F0B 60%)"><div class="wrap">
   <h2>{cta_h}</h2>
-  <p class="muted" style="margin:14px 0 28px">ul. Kościuszki 180, Katowice · Pon–Pt 8:00–20:00</p>
+  <p class="muted" style="margin:14px 0 28px">ul. Kościuszki 180, Katowice · Pon–Pt 8:00–20:00 · Sob 8:00–13:00</p>
   <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a class="btn" href="{cta_href}" data-conv="{cta_conv}" rel="noopener">{cta_btn}</a><a class="btn ghost" href="tel:+48600102689" data-conv="tel">600 102 689</a></div>
 </div></section>
 <div id="chrome-bottom"></div>
@@ -47,20 +57,26 @@ def zabieg(z):
         s = z['zrodla']
         lst = ''.join(f'<li style="margin-bottom:14px"><a href="{u}" rel="noopener">{html.escape(t)}</a> <span class="muted2">{html.escape(n)}</span></li>' for t,u,n in s['lista'])
         zr = f'''<section class="band section"><div class="wrap" style="max-width:860px"><p class="eyebrow">Źródła i stan wiedzy</p><h2 style="font-size:38px;margin-bottom:18px">{html.escape(s['tytul'])}</h2><p class="muted">{html.escape(s['tekst'])}</p><ol class="muted" style="padding-left:22px">{lst}</ol><p class="muted2" style="font-size:14px">Opis zabiegu ma charakter informacyjny i nie zastępuje porady lekarza.</p></div></section>'''
+    foto = (f'<div class="photo-frame"><img src="../../{z["foto_plik"]}" alt="{html.escape(z.get("foto_alt",""),quote=True)}" width="1200" height="1600" style="aspect-ratio:4/5;object-fit:cover"></div>'
+            if z.get('foto_plik') else f'<div class="frame"><div class="ph" style="min-height:500px">{html.escape(z["foto"])}</div></div>')
+    gal = ''
+    if z.get('galeria'):
+        gal = '<section class="wrap" style="max-width:1040px;padding:72px 0 0"><h2 class="center" style="font-size:38px;margin-bottom:24px">Tak to wygląda w salonie</h2><div class="thumbs">' + ''.join(f'<figure style="margin:0"><img src="../../{p}" alt="{html.escape(a,quote=True)}" loading="lazy"><figcaption class="muted2" style="font-size:14px;margin-top:8px">{html.escape(a)}</figcaption></figure>' for p,a in z['galeria']) + '</div></section>'
     body = f'''
 <section class="hero"><div class="wrap split">
   <div>
     <p class="eyebrow line">{html.escape(z['kat'])}</p>
     <h1 style="font-size:clamp(40px,6vw,66px)">{z['tytul_h1'].replace('<em>','<em style="color:var(--gold)">')}</h1>
     <p class="lead">{html.escape(z['lead'])}</p>
-    <div class="ctas" style="margin-bottom:28px"><a class="btn" href="https://perfecteye.booksy.com" data-conv="booksy" rel="noopener">Zarezerwuj zabieg</a><a class="btn ghost" href="tel:+48600102689" data-conv="tel">Zapytaj: 600 102 689</a></div>
+    <div class="ctas" style="margin-bottom:18px"><a class="btn" href="https://perfecteye.booksy.com" data-conv="booksy" rel="noopener">Zarezerwuj zabieg</a><a class="btn ghost" href="tel:+48600102689" data-conv="tel">Zapytaj: 600 102 689</a></div>
+    {hint(booksy_names('twarz', z['slug']))}
     <div style="display:flex;flex-wrap:wrap;border:1px solid var(--line)">
       <div style="flex:1 1 140px;padding:16px 20px;border-right:1px solid var(--line)"><p class="eyebrow" style="font-size:12px;letter-spacing:.18em;color:var(--muted2);margin:0">Cena</p><p style="margin:4px 0 0;font-family:var(--serif);font-size:26px;color:var(--gold)">{z['cena_od']}</p></div>
       <div style="flex:1 1 140px;padding:16px 20px;border-right:1px solid var(--line)"><p class="eyebrow" style="font-size:12px;letter-spacing:.18em;color:var(--muted2);margin:0">Obszar</p><p style="margin:4px 0 0;font-family:var(--serif);font-size:26px">{z['obszar']}</p></div>
       <div style="flex:1 1 140px;padding:16px 20px"><p class="eyebrow" style="font-size:12px;letter-spacing:.18em;color:var(--muted2);margin:0">{z['trzeci_label']}</p><p style="margin:4px 0 0;font-family:var(--serif);font-size:26px">{z['trzeci']}</p></div>
     </div>
   </div>
-  <div class="frame"><div class="ph" style="min-height:500px">{html.escape(z['foto'])}</div></div>
+  {foto}
 </div></section>
 
 <section class="band section"><div class="wrap" style="max-width:1040px">
@@ -69,6 +85,7 @@ def zabieg(z):
   {f'<p class="muted2" style="margin-top:24px;font-size:15px">{html.escape(z["etapy_uwaga"])}</p>' if z.get('etapy_uwaga') else ''}
 </div></section>
 
+{gal}
 <section class="section"><div class="wrap grid c3">
   <div class="card"><h3 style="color:var(--gold);margin-bottom:18px">Dla kogo</h3><ul class="muted" style="margin:0;padding-left:20px;line-height:1.9">{li(z['dla_kogo'])}</ul></div>
   <div class="card"><h3 style="color:var(--gold);margin-bottom:18px">Czego się spodziewać</h3><ul class="muted" style="margin:0;padding-left:20px;line-height:1.9">{li(z['efekty'])}</ul></div>
@@ -94,7 +111,8 @@ def szkolenie(s):
     <p class="eyebrow line">{html.escape(s['kat'])}</p>
     <h1 style="font-size:clamp(38px,5.5vw,60px)">{html.escape(s['tytul'])}</h1>
     <p class="lead">{html.escape(s['lead'])}</p>
-    <div class="ctas" style="margin-bottom:28px"><a class="btn" href="tel:+48600102689" data-conv="tel">Zapytaj o termin</a><a class="btn ghost" href="https://perfecteye.booksy.com" data-conv="booksy" rel="noopener">Zapisz się w Booksy</a></div>
+    <div class="ctas" style="margin-bottom:18px"><a class="btn" href="tel:+48600102689" data-conv="tel">Zapytaj o termin</a><a class="btn ghost" href="https://perfecteye.booksy.com" data-conv="booksy" rel="noopener">Zapisz się w Booksy</a></div>
+    {hint(booksy_names('szkolenia', s['slug']))}
     <div style="display:flex;flex-wrap:wrap;border:1px solid var(--line)">
       <div style="flex:1 1 140px;padding:16px 20px;border-right:1px solid var(--line)"><p style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted2)">Cena</p><p style="margin:4px 0 0;font-family:var(--serif);font-size:24px;color:var(--gold)">{s['cena']}</p></div>
       <div style="flex:1 1 140px;padding:16px 20px;border-right:1px solid var(--line)"><p style="margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted2)">Czas</p><p style="margin:4px 0 0;font-family:var(--serif);font-size:24px">{s['czas']}</p></div>

@@ -1,166 +1,543 @@
 [
-{
- "slug": "oczyszczanie-wodorowe",
- "tytul": "Oczyszczanie wodorowe 7 w 1",
- "tytul_h1": "Oczyszczanie wodorowe <em>7 w 1</em> w Katowicach",
- "kat": "Zabieg na twarz · 7 etapów",
- "meta": "Oczyszczanie wodorowe twarzy 7 w 1 w Katowicach: peeling kawitacyjny, woda wodorowa, nawilżenie, oksybrazja, ultradźwięki, chromoterapia, krioterapia. Od 259 zł. PerfectEye, Brynów.",
- "lead": "Jeden zabieg, siedem kroków pielęgnacji: złuszczenie, oczyszczenie, nawilżenie, dotlenienie i wyciszenie skóry. Dla skóry zmęczonej, z rozszerzonymi porami i nierównym kolorytem.",
- "cena_od": "od 259 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Czas", "trzeci": "45–80 min",
- "foto": "[Zdjęcie: kosmetolożka wykonuje zabieg wodorowy]",
- "etapy": [
-  ["Peeling kawitacyjny", "Fale ultradźwiękowe w kontakcie z wilgotną skórą wytwarzają mikropęcherzyki, które złuszczają martwy naskórek, redukują stany zapalne i pobudzają syntezę kolagenu. Składniki aktywne: kwas mlekowy, glikolowy i cytrynowy, alantoina, ekstrakty z granatu i ananasa."],
-  ["Oczyszczanie wodorowe", "Woda wzbogacona wodorem cząsteczkowym oczyszcza skórę z zanieczyszczeń i nadmiaru sebum, działając jednocześnie antyoksydacyjnie."],
-  ["Nawilżenie i odżywienie", "Rozpuszczalny kolagen, mleczko pszczele, mocznik i ekstrakty roślinne nawilżają, wygładzają i wyciszają skórę."],
-  ["Infuzja tlenowa · oksybrazja", "Dotlenienie skóry i wprowadzenie ampułki nawilżającej lub kolagenowej. Działa też antybakteryjnie, wspiera redukcję stanów zapalnych."],
-  ["Ultradźwięki", "Pomagają oczyścić pory z zaskórników, zwężają je i rozjaśniają przebarwienia."],
-  ["Chromoterapia – światło zielone", "Etap kojący: łagodzi, hamuje produkcję melaniny i wycisza skórę."],
-  ["Krioterapia", "Zimno na zakończenie zamyka zabieg: skóra jest napięta, rozjaśniona i wyciszona."]
- ],
- "etapy_uwaga": "Każdy zabieg zaczynamy od tonizacji, aby przywrócić skórze właściwe pH. Pakiet 5 w 1 pomija etapy 4 i 6.",
- "dla_kogo": ["skóra zmęczona, szara, bez blasku", "rozszerzone pory i zaskórniki", "nierówny koloryt, przebarwienia", "przed ważnym wydarzeniem", "skóra wrażliwa – zabieg jest nieinwazyjny"],
- "efekty": ["skóra gładsza i odświeżona tuż po zabiegu", "wyrównany koloryt i lepsze nawilżenie", "brak okresu rekonwalescencji", "efekt najlepiej utrwala seria 4–6 zabiegów co 2–4 tygodnie"],
- "przeciw": "Ciąża, opryszczka, oparzenia słoneczne, naruszona skóra, ostre stany zapalne, leki przeciwzakrzepowe, nadciśnienie, choroby tarczycy, metalowe elementy w ciele, nadwrażliwość na prąd, ciężkie choroby ogólnoustrojowe.",
- "cennik": [["Oczyszczanie wodorowe 7 w 1", "299 zł", "329 zł", "359 zł"], ["Oczyszczanie wodorowe 5 w 1", "259 zł", "279 zł", "299 zł"], ["Pakiet 4 × 7 w 1", "1146 zł", "—", "1386 zł"], ["Pakiet 4 × 5 w 1", "986 zł", "—", "1146 zł"]],
- "faq": [["Czym różni się pakiet 7 w 1 od 5 w 1?", "Pakiet 5 w 1 to krótsza wersja (45 min) bez infuzji tlenowej i chromoterapii. Sprawdza się przy regularnym oczyszczaniu; 7 w 1 polecamy na start i przy skórze wymagającej."], ["Jak często powtarzać zabieg?", "Najlepszy efekt daje seria 4–6 zabiegów co 2–4 tygodnie, potem zabieg podtrzymujący raz w miesiącu."], ["Czy mogę zrobić zabieg przed weselem lub sylwestrem?", "Tak – zabieg nie wymaga rekonwalescencji. Na szybkie odświeżenie przed wydarzeniem polecamy też zabieg bankietowy."]],
- "zrodla": {"tytul": "Co mówią badania o wodorze w pielęgnacji skóry", "tekst": "Wodór cząsteczkowy jest badany jako przeciwutleniacz. Badania nad jego działaniem na skórę są na wczesnym etapie – dlatego opisujemy efekty ostrożnie i podajemy źródło, które możesz przeczytać.", "lista": [["Asada R., Saitoh Y., Miwa N. Effects of hydrogen-rich water bath on visceral fat and skin blotch. Medical Gas Research, 2019; 9(2): 68–73.", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6607864", "Obserwacje na 4 osobach, bez grupy kontrolnej – wyniki wstępne."]]}
-},
-{
- "slug": "lifting-fala-radiowa",
- "tytul": "Lifting twarzy falą radiową",
- "tytul_h1": "Lifting twarzy <em>falą radiową</em> – anti-ageing",
- "kat": "Anti-ageing · bez igieł",
- "meta": "Lifting twarzy falą radiową (RF, radiofrekwencja) w Katowicach: nieinwazyjne napinanie skóry, pobudzenie kolagenu, poprawa owalu. Od 240 zł. PerfectEye Brynów.",
- "lead": "Radiofrekwencja to technologia napinania skóry, która wykorzystuje fale radiowe do stymulacji produkcji kolagenu. Bezigłowa, nieinwazyjna metoda liftingująca, wygładzająca i ujędrniająca, która poprawia owal twarzy.",
- "cena_od": "od 240 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Pod oczy", "trzeci": "110 zł",
- "foto": "[Zdjęcie: głowica RF na policzku, owal twarzy]",
- "etapy": [
-  ["Peeling kawitacyjny", "Złuszczenie martwego naskórka ultradźwiękami i przygotowanie skóry do głębszego działania kolejnych etapów."],
-  ["Infuzja tlenowa · oksybrazja", "Intensywne nawilżenie i odżywienie: tlen plus ampułka nawilżająca lub kolagenowa. Skóra jest dotleniona, ujędrniona i gotowa do liftingu."],
-  ["Fale radiowe", "Kontrolowane ogrzanie głębszych warstw skóry pobudza fibroblasty do produkcji kolagenu i elastyny. Włókna kurczą się i napinają – owal staje się wyraźniejszy, a drobne zmarszczki spłycone."],
-  ["Chromoterapia – światło zielone", "Łagodzi, wycisza i neutralizuje zaczerwienienie po ogrzaniu skóry. Hamuje produkcję melaniny."],
-  ["Krioterapia", "Zimno zamyka pory i utrwala efekt napięcia."]
- ],
- "etapy_uwaga": "Zabieg zaczynamy od tonizacji skóry. Lifting okolic oczu wykonujemy osobną, mniejszą głowicą (110 zł, 15 min).",
- "dla_kogo": ["skóra traci jędrność, „opada” owal", "zmarszczki mimiczne i drobne linie", "chcesz efektu liftingu bez igieł i rekonwalescencji", "profilaktyka starzenia po 30. roku życia", "przygotowanie do ważnego wydarzenia"],
- "efekty": ["skóra napięta i rozświetlona od razu po zabiegu", "lifting narasta przez 2–3 tygodnie, gdy powstaje nowy kolagen", "pełny efekt daje seria 4–6 zabiegów co 1–2 tygodnie", "efekt utrzymuje się 6–12 miesięcy przy zabiegach podtrzymujących"],
- "przeciw": "Ciąża i karmienie, rozrusznik serca i metalowe implanty w obszarze zabiegu, choroby nowotworowe, epilepsja, stany zapalne skóry, opryszczka, przyjmowanie leków fotouczulających, gorączka, nadciśnienie nieleczone, choroby tarczycy.",
- "cennik": [["Lifting twarzy falą radiową", "240 zł", "260 zł", "280 zł"], ["Lifting okolic oczu falą radiową", "110 zł", "—", "—"], ["Pakiet 4 zabiegi", "910 zł", "—", "1070 zł"]],
- "faq": [["Czy zabieg boli?", "Nie. Odczuwasz przyjemne ciepło. Głowica ma czujnik temperatury, więc skóra nie jest przegrzewana."], ["Kiedy zobaczę efekt?", "Napięcie i blask widać od razu. Właściwy lifting pojawia się po 2–3 tygodniach i narasta z każdym zabiegiem serii."], ["Jak często powtarzać?", "Seria 4–6 zabiegów co 1–2 tygodnie, potem zabieg podtrzymujący co 1–2 miesiące."]],
- "zrodla": {"tytul": "Co mówią badania o radiofrekwencji", "tekst": "Radiofrekwencja jest jedną z lepiej przebadanych nieinwazyjnych metod ujędrniania skóry. Efekt jest stopniowy i zależy od serii.", "lista": [["Beasley K.L., Weiss R.A. Radiofrequency in cosmetic dermatology. Dermatologic Clinics, 2014; 32(1): 79–90.", "https://pubmed.ncbi.nlm.nih.gov/24267424/", "Przegląd badań nad RF w napinaniu skóry twarzy i ciała."]]}
-},
-{
- "slug": "oksybrazja",
- "tytul": "Oksybrazja z infuzją tlenową",
- "tytul_h1": "Oksybrazja <em>z infuzją tlenową</em>",
- "kat": "Zabieg na twarz · blask od razu",
- "meta": "Oksybrazja z infuzją tlenową w Katowicach: dogłębne oczyszczenie, dotlenienie, nawilżenie i wyrównanie kolorytu skóry. Od 235 zł. PerfectEye Brynów.",
- "lead": "Zabieg zapewnia dogłębne oczyszczenie, poprawia nawilżenie i wyrównuje koloryt, nadając skórze zdrowy, promienny wygląd już po pierwszym razie. Dzięki tlenowi skóra jest lepiej dotleniona, ujędrniona i gotowa na dalszą pielęgnację.",
- "cena_od": "od 235 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Czas", "trzeci": "45 min",
- "foto": "[Zdjęcie: oksybrazja, strumień tlenu na skórze]",
- "etapy": [
-  ["Tonizacja", "Przywrócenie skórze właściwego pH i przygotowanie do zabiegu."],
-  ["Oksybrazja", "Strumień sprężonego tlenu i soli fizjologicznej delikatnie złuszcza naskórek, oczyszcza pory i masuje skórę. Bez bólu i podrażnień."],
-  ["Infuzja tlenowa", "Tlen pod ciśnieniem wprowadza w skórę ampułkę nawilżająco-odżywczą lub kolagenową. Działa antybakteryjnie i wspiera walkę z trądzikiem."],
-  ["Maska i krem", "Wyciszenie i zamknięcie zabiegu kosmetykiem dobranym do Twojej skóry."]
- ],
- "etapy_uwaga": "",
- "dla_kogo": ["skóra szara, zmęczona, bez blasku", "przebarwienia i nierówny koloryt", "zaskórniki, skłonność do trądziku", "drobne zmarszczki i blizny potrądzikowe", "zmniejszona elastyczność skóry"],
- "efekty": ["wygładzona faktura i natychmiastowy blask", "redukcja plam pigmentacyjnych w serii", "spłycenie drobnych linii", "oczyszczone pory, mniej wyprysków"],
- "przeciw": "Ciąża, stany zapalne skóry, opryszczka, przerwana ciągłość skóry, rozszerzone naczynka w ostrej fazie, świeża opalenizna, choroby nowotworowe.",
- "cennik": [["Oksybrazja z infuzją tlenową + ampułka", "235 zł", "255 zł", "275 zł"], ["Zabieg bankietowy (oksybrazja + RF + maska)", "259 zł", "279 zł", "299 zł"]],
- "faq": [["Jak często?", "Co 2–4 tygodnie; seria 4–6 zabiegów daje widoczną różnicę. Po serii wystarczy zabieg podtrzymujący raz w miesiącu."], ["Czy mogę się umalować po zabiegu?", "Tak, choć polecamy odczekać kilka godzin, by skóra w pełni skorzystała z ampułki."]],
- "zrodla": null
-},
-{
- "slug": "mikrodermabrazja",
- "tytul": "Mikrodermabrazja",
- "tytul_h1": "Mikrodermabrazja <em>diamentowa</em>",
- "kat": "Zabieg na twarz · złuszczanie",
- "meta": "Mikrodermabrazja w Katowicach: mechaniczne złuszczanie naskórka, wygładzenie, redukcja przebarwień i blizn potrądzikowych. Od 190 zł. PerfectEye Brynów.",
- "lead": "Bezinwazyjne złuszczanie naskórka, które natychmiast poprawia wygląd skóry. Delikatne, mechaniczne usuwanie martwych komórek stymuluje produkcję nowego kolagenu i elastyny – skóra staje się gładsza, bardziej elastyczna i młodsza.",
- "cena_od": "od 190 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Czas", "trzeci": "60 min",
- "foto": "[Zdjęcie: głowica diamentowa na skórze]",
- "etapy": [
-  ["Oczyszczenie i tonizacja", "Przygotowanie skóry i przywrócenie właściwego pH."],
-  ["Mikrodermabrazja", "Diamentowa głowica ścina kontrolowaną warstwę naskórka, a podciśnienie odsysa złuszczone komórki i masuje skórę."],
-  ["Sonoforeza", "Ultradźwięki wprowadzają w odsłoniętą, chłonną skórę składniki aktywne – nawilżające, rozjaśniające lub regenerujące."],
-  ["Maska kojąca", "Wyciszenie skóry i ochrona po złuszczaniu."]
- ],
- "etapy_uwaga": "Po zabiegu kosmetyki domowe wnikają głębiej – to dobry moment na kurację serum.",
- "dla_kogo": ["szorstka, zgrubiała skóra", "drobne zmarszczki", "przebarwienia posłoneczne i potrądzikowe", "blizny potrądzikowe, rozszerzone pory", "zaskórniki"],
- "efekty": ["wygładzenie już po jednym zabiegu", "rozjaśnienie przebarwień w serii", "lepsza skuteczność domowej pielęgnacji", "spłycenie blizn przy regularnych zabiegach"],
- "przeciw": "Aktywny trądzik ropny, opryszczka, stany zapalne, przerwana ciągłość skóry, trądzik różowaty w ostrej fazie, świeża opalenizna, kuracja retinoidami, ciąża.",
- "cennik": [["Mikrodermabrazja", "190 zł", "220 zł", "250 zł"]],
- "faq": [["Czy po zabiegu skóra jest czerwona?", "Lekkie zaróżowienie znika w ciągu kilku godzin. Przez 2–3 dni stosuj krem z filtrem SPF 50."], ["Jak często?", "Co 2–3 tygodnie, seria 4–6 zabiegów."]],
- "zrodla": null
-},
-{
- "slug": "sonoforeza",
- "tytul": "Sonoforeza – mezoterapia ultradźwiękowa",
- "tytul_h1": "Sonoforeza – <em>mezoterapia</em> ultradźwiękowa",
- "kat": "Zabieg na twarz · bez igieł",
- "meta": "Sonoforeza (mezoterapia ultradźwiękowa) w Katowicach: odżywienie, nawilżenie, pobudzenie kolagenu i elastyny bez igieł. Od 150 zł. PerfectEye Brynów.",
- "lead": "Masaż ultradźwiękowy, który korzystnie wpływa na metabolizm komórek skóry: pobudza produkcję kolagenu i elastyny, poprawia ukrwienie i regeneruje. Ultradźwięki docierają znacznie głębiej niż tradycyjne kosmetyki.",
- "cena_od": "od 150 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Czas", "trzeci": "30 min",
- "foto": "[Zdjęcie: sonoforeza, głowica ultradźwiękowa]",
- "etapy": [
-  ["Tonizacja", "Przygotowanie skóry i przywrócenie właściwego pH."],
-  ["Sonoforeza", "Ultradźwięki wprowadzają w skórę wybrane serum (nawilżające, rozjaśniające, przeciwzmarszczkowe) i masują tkanki, poprawiając mikrokrążenie."],
-  ["Krioterapia", "Zimno obkurcza naczynka, zamyka pory i wycisza skórę."]
- ],
- "etapy_uwaga": "Sonoforezę łączymy też z peelingiem kawitacyjnym (210 zł) – duet, który najpierw oczyszcza, a potem odżywia.",
- "dla_kogo": ["skóra odwodniona, mało elastyczna", "trądzik i podrażnienia", "rozszerzone naczynka", "przebarwienia", "skóra dojrzała"],
- "efekty": ["jędrna, wygładzona skóra", "widoczna poprawa nawilżenia", "lepsze mikrokrążenie i koloryt", "komfort – zabieg jest bezbolesny"],
- "przeciw": "Ciąża, rozrusznik serca, metalowe implanty w obszarze zabiegu, nowotwory, stany zapalne, opryszczka, gorączka, epilepsja.",
- "cennik": [["Sonoforeza", "150 zł", "170 zł", "190 zł"], ["Peeling kawitacyjny + sonoforeza", "210 zł", "230 zł", "260 zł"]],
- "faq": [["Czym różni się od mezoterapii igłowej?", "Składniki wprowadzamy ultradźwiękami, nie igłą – bez bólu, śladów i rekonwalescencji. Działanie jest łagodniejsze, dlatego polecamy serię."], ["Jak często?", "Raz w tygodniu, seria 6–10 zabiegów."]],
- "zrodla": null
-},
-{
- "slug": "peeling-kawitacyjny",
- "tytul": "Peeling kawitacyjny + sonoforeza",
- "tytul_h1": "Peeling kawitacyjny <em>+ sonoforeza</em>",
- "kat": "Zabieg na twarz · oczyszczanie",
- "meta": "Peeling kawitacyjny z sonoforezą w Katowicach: głębokie oczyszczenie bez podrażnień i natychmiastowe odżywienie skóry. Od 210 zł. PerfectEye Brynów.",
- "lead": "Duet, który potrafi zdziałać cuda: peeling kawitacyjny głęboko oczyszcza bez podrażnień, a sonoforeza od razu odżywia i nawilża. Szybki sposób na świeżą, gładką skórę – i chwila relaksu.",
- "cena_od": "od 210 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Czas", "trzeci": "60 min",
- "foto": "[Zdjęcie: peeling kawitacyjny, szpatułka ultradźwiękowa]",
- "etapy": [
-  ["Tonizacja", "Przywrócenie skórze właściwego pH."],
-  ["Peeling kawitacyjny", "Fale ultradźwiękowe w kontakcie z wilgotną skórą wytwarzają mikropęcherzyki wypełnione parą wodną. Pękając, złuszczają martwy naskórek, redukują stany zapalne i pobudzają syntezę kolagenu. Składniki aktywne: kwasy mlekowy, glikolowy i cytrynowy, alantoina, ekstrakty z granatu i ananasa."],
-  ["Sonoforeza", "Ultradźwięki wprowadzają w oczyszczoną skórę serum dobrane do jej potrzeb."],
-  ["Maska", "Wyciszenie i domknięcie zabiegu."]
- ],
- "etapy_uwaga": "",
- "dla_kogo": ["skóra tłusta i mieszana z zaskórnikami", "szara, zmęczona cera", "potrzeba szybkiego odświeżenia", "skóra wrażliwa, która nie toleruje peelingów mechanicznych"],
- "efekty": ["głębokie oczyszczenie bez podrażnień", "natychmiastowa gładkość i świeżość", "intensywne nawilżenie i odżywienie", "poprawa jędrności"],
- "przeciw": "Ciąża, rozrusznik serca, metalowe implanty w obszarze zabiegu, stany zapalne, opryszczka, przerwana ciągłość skóry, nowotwory.",
- "cennik": [["Peeling kawitacyjny + sonoforeza", "210 zł", "230 zł", "260 zł"]],
- "faq": [["Jak często?", "Co 2–4 tygodnie. To dobry zabieg „bazowy” między mocniejszymi zabiegami."]],
- "zrodla": null
-},
-{
- "slug": "zabieg-bankietowy",
- "tytul": "Zabieg bankietowy",
- "tytul_h1": "Zabieg bankietowy – <em>efekt „wow”</em> bez ryzyka",
- "kat": "Na wielkie wyjście",
- "meta": "Zabieg bankietowy w Katowicach: szybkie rozświetlenie, napięcie i nawilżenie skóry przed weselem, galą czy sesją. Bez rekonwalescencji. Od 259 zł. PerfectEye Brynów.",
- "lead": "Szybkie rozświetlenie i napięcie skóry przed ważnym wydarzeniem. Łączymy oksybrazję, infuzję tlenową i fale radiowe, tak by skóra wyglądała na wypoczętą i promienną tego samego dnia – bez zaczerwienień i bez ryzyka.",
- "cena_od": "od 259 zł", "obszar": "twarz · szyja · dekolt", "trzeci_label": "Kiedy", "trzeci": "1–2 dni przed",
- "foto": "[Zdjęcie: promienna skóra, makijaż wieczorowy]",
- "etapy": [
-  ["Tonizacja i oksybrazja", "Delikatne złuszczenie i oczyszczenie strumieniem tlenu."],
-  ["Infuzja tlenowa z ampułką", "Nawilżenie i odżywienie, które „wypełnia” skórę od środka."],
-  ["Fale radiowe", "Natychmiastowe napięcie skóry i poprawa owalu."],
-  ["Maska rozświetlająca", "Blask i gładkość pod makijaż."]
- ],
- "etapy_uwaga": "",
- "dla_kogo": ["wesele, gala, sesja zdjęciowa", "skóra zmęczona po tygodniu pracy", "każdy typ skóry – zabieg jest łagodny"],
- "efekty": ["skóra promienna i napięta od razu", "makijaż „siada” lepiej i trzyma się dłużej", "efekt utrzymuje się kilka dni"],
- "przeciw": "Jak przy oksybrazji i fali radiowej: ciąża, rozrusznik, metalowe implanty, stany zapalne, opryszczka, świeża opalenizna.",
- "cennik": [["Zabieg bankietowy", "259 zł", "279 zł", "299 zł"]],
- "faq": [["Kiedy najlepiej zrobić zabieg?", "1–2 dni przed wydarzeniem. Skóra jest wtedy w szczytowej formie, a ewentualne lekkie zaróżowienie na pewno zniknie."]],
- "zrodla": null
-}
+  {
+    "slug": "oczyszczanie-wodorowe",
+    "tytul": "Oczyszczanie wodorowe 7 w 1",
+    "tytul_h1": "Oczyszczanie wodorowe <em>7 w 1</em> w Katowicach",
+    "kat": "Zabieg na twarz · 7 etapów",
+    "meta": "Oczyszczanie wodorowe twarzy 7 w 1 w Katowicach: peeling kawitacyjny, woda wodorowa, nawilżenie, oksybrazja, ultradźwięki, chromoterapia, krioterapia. Od 259 zł. PerfectEye, Brynów.",
+    "lead": "Jeden zabieg, siedem kroków pielęgnacji: złuszczenie, oczyszczenie, nawilżenie, dotlenienie i wyciszenie skóry. Dla skóry zmęczonej, z rozszerzonymi porami i nierównym kolorytem.",
+    "cena_od": "od 259 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Czas",
+    "trzeci": "45–80 min",
+    "foto": "[Zdjęcie: kosmetolożka wykonuje zabieg wodorowy]",
+    "etapy": [
+      [
+        "Peeling kawitacyjny",
+        "Fale ultradźwiękowe w kontakcie z wilgotną skórą wytwarzają mikropęcherzyki, które złuszczają martwy naskórek, redukują stany zapalne i pobudzają syntezę kolagenu. Składniki aktywne: kwas mlekowy, glikolowy i cytrynowy, alantoina, ekstrakty z granatu i ananasa."
+      ],
+      [
+        "Oczyszczanie wodorowe",
+        "Woda wzbogacona wodorem cząsteczkowym oczyszcza skórę z zanieczyszczeń i nadmiaru sebum, działając jednocześnie antyoksydacyjnie."
+      ],
+      [
+        "Nawilżenie i odżywienie",
+        "Rozpuszczalny kolagen, mleczko pszczele, mocznik i ekstrakty roślinne nawilżają, wygładzają i wyciszają skórę."
+      ],
+      [
+        "Infuzja tlenowa · oksybrazja",
+        "Dotlenienie skóry i wprowadzenie ampułki nawilżającej lub kolagenowej. Działa też antybakteryjnie, wspiera redukcję stanów zapalnych."
+      ],
+      [
+        "Ultradźwięki",
+        "Pomagają oczyścić pory z zaskórników, zwężają je i rozjaśniają przebarwienia."
+      ],
+      [
+        "Chromoterapia – światło zielone",
+        "Etap kojący: łagodzi, hamuje produkcję melaniny i wycisza skórę."
+      ],
+      [
+        "Krioterapia",
+        "Zimno na zakończenie zamyka zabieg: skóra jest napięta, rozjaśniona i wyciszona."
+      ]
+    ],
+    "etapy_uwaga": "Każdy zabieg zaczynamy od tonizacji, aby przywrócić skórze właściwe pH. Pakiet 5 w 1 pomija etapy 4 i 6.",
+    "dla_kogo": [
+      "skóra zmęczona, szara, bez blasku",
+      "rozszerzone pory i zaskórniki",
+      "nierówny koloryt, przebarwienia",
+      "przed ważnym wydarzeniem",
+      "skóra wrażliwa – zabieg jest nieinwazyjny"
+    ],
+    "efekty": [
+      "skóra gładsza i odświeżona tuż po zabiegu",
+      "wyrównany koloryt i lepsze nawilżenie",
+      "brak okresu rekonwalescencji",
+      "efekt najlepiej utrwala seria 4–6 zabiegów co 2–4 tygodnie"
+    ],
+    "przeciw": "Ciąża, opryszczka, oparzenia słoneczne, naruszona skóra, ostre stany zapalne, leki przeciwzakrzepowe, nadciśnienie, choroby tarczycy, metalowe elementy w ciele, nadwrażliwość na prąd, ciężkie choroby ogólnoustrojowe.",
+    "cennik": [
+      [
+        "Oczyszczanie wodorowe 7 w 1",
+        "299 zł",
+        "329 zł",
+        "359 zł"
+      ],
+      [
+        "Oczyszczanie wodorowe 5 w 1",
+        "259 zł",
+        "279 zł",
+        "299 zł"
+      ],
+      [
+        "Pakiet 4 × 7 w 1",
+        "1146 zł",
+        "—",
+        "1386 zł"
+      ],
+      [
+        "Pakiet 4 × 5 w 1",
+        "986 zł",
+        "—",
+        "1146 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Czym różni się pakiet 7 w 1 od 5 w 1?",
+        "Pakiet 5 w 1 to krótsza wersja (45 min) bez infuzji tlenowej i chromoterapii. Sprawdza się przy regularnym oczyszczaniu; 7 w 1 polecamy na start i przy skórze wymagającej."
+      ],
+      [
+        "Jak często powtarzać zabieg?",
+        "Najlepszy efekt daje seria 4–6 zabiegów co 2–4 tygodnie, potem zabieg podtrzymujący raz w miesiącu."
+      ],
+      [
+        "Czy mogę zrobić zabieg przed weselem lub sylwestrem?",
+        "Tak – zabieg nie wymaga rekonwalescencji. Na szybkie odświeżenie przed wydarzeniem polecamy też zabieg bankietowy."
+      ]
+    ],
+    "zrodla": {
+      "tytul": "Co mówią badania o wodorze w pielęgnacji skóry",
+      "tekst": "Wodór cząsteczkowy jest badany jako przeciwutleniacz. Badania nad jego działaniem na skórę są na wczesnym etapie – dlatego opisujemy efekty ostrożnie i podajemy źródło, które możesz przeczytać.",
+      "lista": [
+        [
+          "Asada R., Saitoh Y., Miwa N. Effects of hydrogen-rich water bath on visceral fat and skin blotch. Medical Gas Research, 2019; 9(2): 68–73.",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC6607864",
+          "Obserwacje na 4 osobach, bez grupy kontrolnej – wyniki wstępne."
+        ]
+      ]
+    },
+    "foto_plik": "zdjecia/wodorowe/zabieg.jpg",
+    "foto_alt": "Kosmetolożka PerfectEye wykonuje oczyszczanie wodorowe urządzeniem 7 w 1",
+    "galeria": [
+      [
+        "zdjecia/wodorowe/zabieg-urzadzenie.jpg",
+        "Etap odżywiania – ampułka wprowadzana głowicą"
+      ],
+      [
+        "zdjecia/wodorowe/masaz.jpg",
+        "Masaż głowicą na zakończenie zabiegu"
+      ],
+      [
+        "zdjecia/wodorowe/peeling.jpg",
+        "Peeling kawitacyjny – szpatułka ultradźwiękowa"
+      ]
+    ]
+  },
+  {
+    "slug": "lifting-fala-radiowa",
+    "tytul": "Lifting twarzy falą radiową",
+    "tytul_h1": "Lifting twarzy <em>falą radiową</em> – anti-ageing",
+    "kat": "Anti-ageing · bez igieł",
+    "meta": "Lifting twarzy falą radiową (RF, radiofrekwencja) w Katowicach: nieinwazyjne napinanie skóry, pobudzenie kolagenu, poprawa owalu. Od 240 zł. PerfectEye Brynów.",
+    "lead": "Radiofrekwencja to technologia napinania skóry, która wykorzystuje fale radiowe do stymulacji produkcji kolagenu. Bezigłowa, nieinwazyjna metoda liftingująca, wygładzająca i ujędrniająca, która poprawia owal twarzy.",
+    "cena_od": "od 240 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Pod oczy",
+    "trzeci": "110 zł",
+    "foto": "[Zdjęcie: głowica RF na policzku, owal twarzy]",
+    "etapy": [
+      [
+        "Peeling kawitacyjny",
+        "Złuszczenie martwego naskórka ultradźwiękami i przygotowanie skóry do głębszego działania kolejnych etapów."
+      ],
+      [
+        "Infuzja tlenowa · oksybrazja",
+        "Intensywne nawilżenie i odżywienie: tlen plus ampułka nawilżająca lub kolagenowa. Skóra jest dotleniona, ujędrniona i gotowa do liftingu."
+      ],
+      [
+        "Fale radiowe",
+        "Kontrolowane ogrzanie głębszych warstw skóry pobudza fibroblasty do produkcji kolagenu i elastyny. Włókna kurczą się i napinają – owal staje się wyraźniejszy, a drobne zmarszczki spłycone."
+      ],
+      [
+        "Chromoterapia – światło zielone",
+        "Łagodzi, wycisza i neutralizuje zaczerwienienie po ogrzaniu skóry. Hamuje produkcję melaniny."
+      ],
+      [
+        "Krioterapia",
+        "Zimno zamyka pory i utrwala efekt napięcia."
+      ]
+    ],
+    "etapy_uwaga": "Zabieg zaczynamy od tonizacji skóry. Lifting okolic oczu wykonujemy osobną, mniejszą głowicą (110 zł, 15 min).",
+    "dla_kogo": [
+      "skóra traci jędrność, „opada” owal",
+      "zmarszczki mimiczne i drobne linie",
+      "chcesz efektu liftingu bez igieł i rekonwalescencji",
+      "profilaktyka starzenia po 30. roku życia",
+      "przygotowanie do ważnego wydarzenia"
+    ],
+    "efekty": [
+      "skóra napięta i rozświetlona od razu po zabiegu",
+      "lifting narasta przez 2–3 tygodnie, gdy powstaje nowy kolagen",
+      "pełny efekt daje seria 4–6 zabiegów co 1–2 tygodnie",
+      "efekt utrzymuje się 6–12 miesięcy przy zabiegach podtrzymujących"
+    ],
+    "przeciw": "Ciąża i karmienie, rozrusznik serca i metalowe implanty w obszarze zabiegu, choroby nowotworowe, epilepsja, stany zapalne skóry, opryszczka, przyjmowanie leków fotouczulających, gorączka, nadciśnienie nieleczone, choroby tarczycy.",
+    "cennik": [
+      [
+        "Lifting twarzy falą radiową",
+        "240 zł",
+        "260 zł",
+        "280 zł"
+      ],
+      [
+        "Lifting okolic oczu falą radiową",
+        "110 zł",
+        "—",
+        "—"
+      ],
+      [
+        "Pakiet 4 zabiegi",
+        "910 zł",
+        "—",
+        "1070 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Czy zabieg boli?",
+        "Nie. Odczuwasz przyjemne ciepło. Głowica ma czujnik temperatury, więc skóra nie jest przegrzewana."
+      ],
+      [
+        "Kiedy zobaczę efekt?",
+        "Napięcie i blask widać od razu. Właściwy lifting pojawia się po 2–3 tygodniach i narasta z każdym zabiegiem serii."
+      ],
+      [
+        "Jak często powtarzać?",
+        "Seria 4–6 zabiegów co 1–2 tygodnie, potem zabieg podtrzymujący co 1–2 miesiące."
+      ]
+    ],
+    "zrodla": {
+      "tytul": "Co mówią badania o radiofrekwencji",
+      "tekst": "Radiofrekwencja jest jedną z lepiej przebadanych nieinwazyjnych metod ujędrniania skóry. Efekt jest stopniowy i zależy od serii.",
+      "lista": [
+        [
+          "Beasley K.L., Weiss R.A. Radiofrequency in cosmetic dermatology. Dermatologic Clinics, 2014; 32(1): 79–90.",
+          "https://pubmed.ncbi.nlm.nih.gov/24267424/",
+          "Przegląd badań nad RF w napinaniu skóry twarzy i ciała."
+        ]
+      ]
+    }
+  },
+  {
+    "slug": "oksybrazja",
+    "tytul": "Oksybrazja z infuzją tlenową",
+    "tytul_h1": "Oksybrazja <em>z infuzją tlenową</em>",
+    "kat": "Zabieg na twarz · blask od razu",
+    "meta": "Oksybrazja z infuzją tlenową w Katowicach: dogłębne oczyszczenie, dotlenienie, nawilżenie i wyrównanie kolorytu skóry. Od 235 zł. PerfectEye Brynów.",
+    "lead": "Zabieg zapewnia dogłębne oczyszczenie, poprawia nawilżenie i wyrównuje koloryt, nadając skórze zdrowy, promienny wygląd już po pierwszym razie. Dzięki tlenowi skóra jest lepiej dotleniona, ujędrniona i gotowa na dalszą pielęgnację.",
+    "cena_od": "od 235 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Czas",
+    "trzeci": "45 min",
+    "foto": "[Zdjęcie: oksybrazja, strumień tlenu na skórze]",
+    "etapy": [
+      [
+        "Tonizacja",
+        "Przywrócenie skórze właściwego pH i przygotowanie do zabiegu."
+      ],
+      [
+        "Oksybrazja",
+        "Strumień sprężonego tlenu i soli fizjologicznej delikatnie złuszcza naskórek, oczyszcza pory i masuje skórę. Bez bólu i podrażnień."
+      ],
+      [
+        "Infuzja tlenowa",
+        "Tlen pod ciśnieniem wprowadza w skórę ampułkę nawilżająco-odżywczą lub kolagenową. Działa antybakteryjnie i wspiera walkę z trądzikiem."
+      ],
+      [
+        "Maska i krem",
+        "Wyciszenie i zamknięcie zabiegu kosmetykiem dobranym do Twojej skóry."
+      ]
+    ],
+    "etapy_uwaga": "",
+    "dla_kogo": [
+      "skóra szara, zmęczona, bez blasku",
+      "przebarwienia i nierówny koloryt",
+      "zaskórniki, skłonność do trądziku",
+      "drobne zmarszczki i blizny potrądzikowe",
+      "zmniejszona elastyczność skóry"
+    ],
+    "efekty": [
+      "wygładzona faktura i natychmiastowy blask",
+      "redukcja plam pigmentacyjnych w serii",
+      "spłycenie drobnych linii",
+      "oczyszczone pory, mniej wyprysków"
+    ],
+    "przeciw": "Ciąża, stany zapalne skóry, opryszczka, przerwana ciągłość skóry, rozszerzone naczynka w ostrej fazie, świeża opalenizna, choroby nowotworowe.",
+    "cennik": [
+      [
+        "Oksybrazja z infuzją tlenową + ampułka",
+        "235 zł",
+        "255 zł",
+        "275 zł"
+      ],
+      [
+        "Zabieg bankietowy (oksybrazja + RF + maska)",
+        "259 zł",
+        "279 zł",
+        "299 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Jak często?",
+        "Co 2–4 tygodnie; seria 4–6 zabiegów daje widoczną różnicę. Po serii wystarczy zabieg podtrzymujący raz w miesiącu."
+      ],
+      [
+        "Czy mogę się umalować po zabiegu?",
+        "Tak, choć polecamy odczekać kilka godzin, by skóra w pełni skorzystała z ampułki."
+      ]
+    ],
+    "zrodla": null
+  },
+  {
+    "slug": "mikrodermabrazja",
+    "tytul": "Mikrodermabrazja",
+    "tytul_h1": "Mikrodermabrazja <em>diamentowa</em>",
+    "kat": "Zabieg na twarz · złuszczanie",
+    "meta": "Mikrodermabrazja w Katowicach: mechaniczne złuszczanie naskórka, wygładzenie, redukcja przebarwień i blizn potrądzikowych. Od 190 zł. PerfectEye Brynów.",
+    "lead": "Bezinwazyjne złuszczanie naskórka, które natychmiast poprawia wygląd skóry. Delikatne, mechaniczne usuwanie martwych komórek stymuluje produkcję nowego kolagenu i elastyny – skóra staje się gładsza, bardziej elastyczna i młodsza.",
+    "cena_od": "od 190 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Czas",
+    "trzeci": "60 min",
+    "foto": "[Zdjęcie: głowica diamentowa na skórze]",
+    "etapy": [
+      [
+        "Oczyszczenie i tonizacja",
+        "Przygotowanie skóry i przywrócenie właściwego pH."
+      ],
+      [
+        "Mikrodermabrazja",
+        "Diamentowa głowica ścina kontrolowaną warstwę naskórka, a podciśnienie odsysa złuszczone komórki i masuje skórę."
+      ],
+      [
+        "Sonoforeza",
+        "Ultradźwięki wprowadzają w odsłoniętą, chłonną skórę składniki aktywne – nawilżające, rozjaśniające lub regenerujące."
+      ],
+      [
+        "Maska kojąca",
+        "Wyciszenie skóry i ochrona po złuszczaniu."
+      ]
+    ],
+    "etapy_uwaga": "Po zabiegu kosmetyki domowe wnikają głębiej – to dobry moment na kurację serum.",
+    "dla_kogo": [
+      "szorstka, zgrubiała skóra",
+      "drobne zmarszczki",
+      "przebarwienia posłoneczne i potrądzikowe",
+      "blizny potrądzikowe, rozszerzone pory",
+      "zaskórniki"
+    ],
+    "efekty": [
+      "wygładzenie już po jednym zabiegu",
+      "rozjaśnienie przebarwień w serii",
+      "lepsza skuteczność domowej pielęgnacji",
+      "spłycenie blizn przy regularnych zabiegach"
+    ],
+    "przeciw": "Aktywny trądzik ropny, opryszczka, stany zapalne, przerwana ciągłość skóry, trądzik różowaty w ostrej fazie, świeża opalenizna, kuracja retinoidami, ciąża.",
+    "cennik": [
+      [
+        "Mikrodermabrazja",
+        "190 zł",
+        "220 zł",
+        "250 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Czy po zabiegu skóra jest czerwona?",
+        "Lekkie zaróżowienie znika w ciągu kilku godzin. Przez 2–3 dni stosuj krem z filtrem SPF 50."
+      ],
+      [
+        "Jak często?",
+        "Co 2–3 tygodnie, seria 4–6 zabiegów."
+      ]
+    ],
+    "zrodla": null
+  },
+  {
+    "slug": "sonoforeza",
+    "tytul": "Sonoforeza – mezoterapia ultradźwiękowa",
+    "tytul_h1": "Sonoforeza – <em>mezoterapia</em> ultradźwiękowa",
+    "kat": "Zabieg na twarz · bez igieł",
+    "meta": "Sonoforeza (mezoterapia ultradźwiękowa) w Katowicach: odżywienie, nawilżenie, pobudzenie kolagenu i elastyny bez igieł. Od 150 zł. PerfectEye Brynów.",
+    "lead": "Masaż ultradźwiękowy, który korzystnie wpływa na metabolizm komórek skóry: pobudza produkcję kolagenu i elastyny, poprawia ukrwienie i regeneruje. Ultradźwięki docierają znacznie głębiej niż tradycyjne kosmetyki.",
+    "cena_od": "od 150 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Czas",
+    "trzeci": "30 min",
+    "foto": "[Zdjęcie: sonoforeza, głowica ultradźwiękowa]",
+    "etapy": [
+      [
+        "Tonizacja",
+        "Przygotowanie skóry i przywrócenie właściwego pH."
+      ],
+      [
+        "Sonoforeza",
+        "Ultradźwięki wprowadzają w skórę wybrane serum (nawilżające, rozjaśniające, przeciwzmarszczkowe) i masują tkanki, poprawiając mikrokrążenie."
+      ],
+      [
+        "Krioterapia",
+        "Zimno obkurcza naczynka, zamyka pory i wycisza skórę."
+      ]
+    ],
+    "etapy_uwaga": "Sonoforezę łączymy też z peelingiem kawitacyjnym (210 zł) – duet, który najpierw oczyszcza, a potem odżywia.",
+    "dla_kogo": [
+      "skóra odwodniona, mało elastyczna",
+      "trądzik i podrażnienia",
+      "rozszerzone naczynka",
+      "przebarwienia",
+      "skóra dojrzała"
+    ],
+    "efekty": [
+      "jędrna, wygładzona skóra",
+      "widoczna poprawa nawilżenia",
+      "lepsze mikrokrążenie i koloryt",
+      "komfort – zabieg jest bezbolesny"
+    ],
+    "przeciw": "Ciąża, rozrusznik serca, metalowe implanty w obszarze zabiegu, nowotwory, stany zapalne, opryszczka, gorączka, epilepsja.",
+    "cennik": [
+      [
+        "Sonoforeza",
+        "150 zł",
+        "170 zł",
+        "190 zł"
+      ],
+      [
+        "Peeling kawitacyjny + sonoforeza",
+        "210 zł",
+        "230 zł",
+        "260 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Czym różni się od mezoterapii igłowej?",
+        "Składniki wprowadzamy ultradźwiękami, nie igłą – bez bólu, śladów i rekonwalescencji. Działanie jest łagodniejsze, dlatego polecamy serię."
+      ],
+      [
+        "Jak często?",
+        "Raz w tygodniu, seria 6–10 zabiegów."
+      ]
+    ],
+    "zrodla": null
+  },
+  {
+    "slug": "peeling-kawitacyjny",
+    "tytul": "Peeling kawitacyjny + sonoforeza",
+    "tytul_h1": "Peeling kawitacyjny <em>+ sonoforeza</em>",
+    "kat": "Zabieg na twarz · oczyszczanie",
+    "meta": "Peeling kawitacyjny z sonoforezą w Katowicach: głębokie oczyszczenie bez podrażnień i natychmiastowe odżywienie skóry. Od 210 zł. PerfectEye Brynów.",
+    "lead": "Duet, który potrafi zdziałać cuda: peeling kawitacyjny głęboko oczyszcza bez podrażnień, a sonoforeza od razu odżywia i nawilża. Szybki sposób na świeżą, gładką skórę – i chwila relaksu.",
+    "cena_od": "od 210 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Czas",
+    "trzeci": "60 min",
+    "foto": "[Zdjęcie: peeling kawitacyjny, szpatułka ultradźwiękowa]",
+    "etapy": [
+      [
+        "Tonizacja",
+        "Przywrócenie skórze właściwego pH."
+      ],
+      [
+        "Peeling kawitacyjny",
+        "Fale ultradźwiękowe w kontakcie z wilgotną skórą wytwarzają mikropęcherzyki wypełnione parą wodną. Pękając, złuszczają martwy naskórek, redukują stany zapalne i pobudzają syntezę kolagenu. Składniki aktywne: kwasy mlekowy, glikolowy i cytrynowy, alantoina, ekstrakty z granatu i ananasa."
+      ],
+      [
+        "Sonoforeza",
+        "Ultradźwięki wprowadzają w oczyszczoną skórę serum dobrane do jej potrzeb."
+      ],
+      [
+        "Maska",
+        "Wyciszenie i domknięcie zabiegu."
+      ]
+    ],
+    "etapy_uwaga": "",
+    "dla_kogo": [
+      "skóra tłusta i mieszana z zaskórnikami",
+      "szara, zmęczona cera",
+      "potrzeba szybkiego odświeżenia",
+      "skóra wrażliwa, która nie toleruje peelingów mechanicznych"
+    ],
+    "efekty": [
+      "głębokie oczyszczenie bez podrażnień",
+      "natychmiastowa gładkość i świeżość",
+      "intensywne nawilżenie i odżywienie",
+      "poprawa jędrności"
+    ],
+    "przeciw": "Ciąża, rozrusznik serca, metalowe implanty w obszarze zabiegu, stany zapalne, opryszczka, przerwana ciągłość skóry, nowotwory.",
+    "cennik": [
+      [
+        "Peeling kawitacyjny + sonoforeza",
+        "210 zł",
+        "230 zł",
+        "260 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Jak często?",
+        "Co 2–4 tygodnie. To dobry zabieg „bazowy” między mocniejszymi zabiegami."
+      ]
+    ],
+    "zrodla": null
+  },
+  {
+    "slug": "zabieg-bankietowy",
+    "tytul": "Zabieg bankietowy",
+    "tytul_h1": "Zabieg bankietowy – <em>efekt „wow”</em> bez ryzyka",
+    "kat": "Na wielkie wyjście",
+    "meta": "Zabieg bankietowy w Katowicach: szybkie rozświetlenie, napięcie i nawilżenie skóry przed weselem, galą czy sesją. Bez rekonwalescencji. Od 259 zł. PerfectEye Brynów.",
+    "lead": "Szybkie rozświetlenie i napięcie skóry przed ważnym wydarzeniem. Łączymy oksybrazję, infuzję tlenową i fale radiowe, tak by skóra wyglądała na wypoczętą i promienną tego samego dnia – bez zaczerwienień i bez ryzyka.",
+    "cena_od": "od 259 zł",
+    "obszar": "twarz · szyja · dekolt",
+    "trzeci_label": "Kiedy",
+    "trzeci": "1–2 dni przed",
+    "foto": "[Zdjęcie: promienna skóra, makijaż wieczorowy]",
+    "etapy": [
+      [
+        "Tonizacja i oksybrazja",
+        "Delikatne złuszczenie i oczyszczenie strumieniem tlenu."
+      ],
+      [
+        "Infuzja tlenowa z ampułką",
+        "Nawilżenie i odżywienie, które „wypełnia” skórę od środka."
+      ],
+      [
+        "Fale radiowe",
+        "Natychmiastowe napięcie skóry i poprawa owalu."
+      ],
+      [
+        "Maska rozświetlająca",
+        "Blask i gładkość pod makijaż."
+      ]
+    ],
+    "etapy_uwaga": "",
+    "dla_kogo": [
+      "wesele, gala, sesja zdjęciowa",
+      "skóra zmęczona po tygodniu pracy",
+      "każdy typ skóry – zabieg jest łagodny"
+    ],
+    "efekty": [
+      "skóra promienna i napięta od razu",
+      "makijaż „siada” lepiej i trzyma się dłużej",
+      "efekt utrzymuje się kilka dni"
+    ],
+    "przeciw": "Jak przy oksybrazji i fali radiowej: ciąża, rozrusznik, metalowe implanty, stany zapalne, opryszczka, świeża opalenizna.",
+    "cennik": [
+      [
+        "Zabieg bankietowy",
+        "259 zł",
+        "279 zł",
+        "299 zł"
+      ]
+    ],
+    "faq": [
+      [
+        "Kiedy najlepiej zrobić zabieg?",
+        "1–2 dni przed wydarzeniem. Skóra jest wtedy w szczytowej formie, a ewentualne lekkie zaróżowienie na pewno zniknie."
+      ]
+    ],
+    "zrodla": null
+  }
 ]
