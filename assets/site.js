@@ -44,6 +44,8 @@
     // podstawienie danych kontaktowych w treści
     document.querySelectorAll('[data-u]').forEach(el => { const k = el.dataset.u; if (u[k] !== undefined) el.textContent = u[k]; });
     document.querySelectorAll('a[data-href-u]').forEach(el => { el.href = u[el.dataset.hrefU]; });
+    // każdy link do Booksy = bezprowizyjny link salonu (Booksy nie pobiera prowizji Boost)
+    document.querySelectorAll('a[href*="booksy.com"]').forEach(el => { if (/perfecteye\.booksy\.com/.test(el.href)) el.href = u.booksy; });
   }
 
   // --- zgoda cookies (Consent Mode v2) ---

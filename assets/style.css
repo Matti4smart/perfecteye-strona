@@ -99,7 +99,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:spac
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
 .badge{position:absolute;right:-8px;bottom:48px;background:var(--bg);border:1px solid var(--gold);padding:18px 24px}
 .badge b{display:block;font-family:var(--serif);font-size:40px;color:var(--gold);line-height:1;font-weight:500;white-space:nowrap}
-.badge span{white-space:nowrap}
+.badge span{white-space:nowrap}.badge b span{display:inline;margin:0;font-size:inherit;letter-spacing:0;color:inherit}
 .badge span{display:block;margin-top:6px;font-size:13px;letter-spacing:.08em;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{border:1px solid var(--line);padding:5px 12px;font-size:13px;color:var(--muted)}
