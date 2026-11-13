@@ -1,10 +1,9 @@
 [
-  { "plik": "zdjecia/galeria/rzesy-1.jpg", "opis": "Rzęsy Volume 5D", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-2.jpg", "opis": "Kim Kardashian – Camellia Lashes", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/rzesy-3.jpg", "opis": "Wet Lashes", "kategoria": "rzesy" },
-  { "plik": "zdjecia/galeria/brwi-1.jpg", "opis": "Laminacja brwi + henna pudrowa", "kategoria": "brwi" },
-  { "plik": "zdjecia/galeria/twarz-1.jpg", "opis": "Oczyszczanie wodorowe", "kategoria": "twarz" },
-  { "plik": "zdjecia/galeria/twarz-2.jpg", "opis": "Lifting falą radiową", "kategoria": "twarz" },
-  { "plik": "zdjecia/galeria/szkolenie-1.jpg", "opis": "Szkolenie Lash Beginner", "kategoria": "akademia" },
-  { "plik": "zdjecia/galeria/salon-1.jpg", "opis": "Wnętrze salonu", "kategoria": "salon" }
+  { "plik": "zdjecia/galeria/rzesy-1.jpg", "opis": "Rzęsy objętościowe – efekt po zabiegu", "kategoria": "rzesy" },
+  { "plik": "zdjecia/galeria/rzesy-2.jpg", "opis": "Naturalne zagęszczenie rzęs", "kategoria": "rzesy" },
+  { "plik": "zdjecia/galeria/rzesy-3.jpg", "opis": "Przedłużanie rzęs – w trakcie zabiegu", "kategoria": "rzesy" },
+  { "plik": "zdjecia/galeria/rzesy-4.jpg", "opis": "Stylizacja rzęs – efekt", "kategoria": "rzesy" },
+  { "plik": "zdjecia/galeria/rzesy-5.jpg", "opis": "Rzęsy i brwi – efekt końcowy", "kategoria": "rzesy" },
+  { "plik": "zdjecia/galeria/rzesy-6.jpg", "opis": "Precyzyjna aplikacja rzęs", "kategoria": "rzesy" },
+  { "plik": "zdjecia/galeria/szkolenie-1.jpg", "opis": "Szkolenie w Akademii PerfectEye", "kategoria": "akademia" }
 ]

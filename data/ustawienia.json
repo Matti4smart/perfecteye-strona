@@ -8,7 +8,7 @@
   "godziny": "Pon–Pt 8:00–20:00",
   "godziny_sobota": "",
   "parking": "",
-  "booksy": "https://perfecteye.booksy.com/h",
+  "booksy": "https://perfecteye.booksy.com",
   "instagram": "https://www.instagram.com/perfecteye.pl/",
   "facebook": "https://www.facebook.com/rzesy.perfecteye",
   "rok_zalozenia": 2011,
@@ -17,6 +17,6 @@
   "ocena_google": "4,9",
   "opinie_google": 74,
   "pasek_promo": "Do końca listopada: wybrane zabiegi w Booksy do -40%. Sprawdź promocje.",
-  "pasek_promo_link": "https://perfecteye.booksy.com/h",
+  "pasek_promo_link": "https://perfecteye.booksy.com",
   "pasek_promo_wlaczony": true
 }
