@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O nas – salon PerfectEye Katowice, Dorota Górecka i zespół</title>
+<meta name="description" content="PerfectEye to salon rzęs i kosmetologii w Katowicach-Brynowie, prowadzony od 2011 r. przez inż. Dorotę Górecką. Poznaj zespół, wnętrze i nasze zasady pracy.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.perfecteye.pl/o-nas/">
+<link rel="icon" href="../zdjecia/favicon.svg" type="image/svg+xml">
+<script src="../assets/head.js" data-root="../"></script>
+</head>
+<body data-page="o-nas/">
+<div id="chrome-top"></div>
+<nav class="wrap crumbs" aria-label="Ścieżka"><a href="../">Strona główna</a> / <span style="color:var(--text)">O nas</span></nav>
+
+<section class="hero"><div class="wrap split">
+  <div>
+    <p class="eyebrow line">O salonie</p>
+    <h1 style="font-size:clamp(40px,6vw,64px)">Elegancja w <em class="gold-text">przytulnym klimacie</em></h1>
+    <p class="lead">Witamy w PerfectEye – miejscu, w którym każdy detal sprzyja odprężeniu. Tu Twoje piękno spotyka się z profesjonalną opieką, a każda wizyta to czas na regenerację i dbanie o siebie.</p>
+  </div>
+  <div class="frame"><div class="ph" style="min-height:460px">[Zdjęcie: wnętrze salonu – fotel zabiegowy, ciepłe światło]</div></div>
+</div></section>
+
+<section class="band section"><div class="wrap split" style="align-items:flex-start">
+  <div>
+    <p class="muted">Nasz zespół to wykwalifikowane specjalistki, które do każdej klientki podchodzą z pasją i precyzją. Korzystamy z najnowszych technologii i najlepszych kosmetyków, aby zapewnić efekty na najwyższym poziomie.</p>
+    <p class="muted">Oferujemy kompleksowe usługi: od przedłużania rzęs i brwi, przez laminację i hennę, po zabiegi pielęgnacyjne na twarz. Niezależnie od tego, czy potrzebujesz nawilżenia skóry, odmładzającego zabiegu, czy perfekcyjnego spojrzenia – jesteśmy tu dla Ciebie.</p>
+    <p class="muted">Każda klientka jest dla nas wyjątkowa, dlatego zabiegi dostosowujemy do Twoich potrzeb i oczekiwań. Wspólnie ustalimy, jak najlepiej podkreślić Twoje naturalne piękno i zadbać o skórę.</p>
+    <p class="muted">Salon to oaza spokoju. Przytulne wnętrza i atmosfera sprzyjająca wyciszeniu sprawią, że każda wizyta stanie się chwilą odprężenia od codziennego zgiełku.</p>
+  </div>
+  <div class="grid c2" style="gap:18px">
+    <div class="card"><h3 style="font-size:22px;margin-bottom:8px">Od 2011 roku</h3><p class="muted" style="margin:0;font-size:15px">Piętnaście lat pracy z rzęsami, brwiami i skórą twarzy. Szkolimy też inne stylistki.</p></div>
+    <div class="card"><h3 style="font-size:22px;margin-bottom:8px">Sprawdzone produkty</h3><p class="muted" style="margin:0;font-size:15px">Rzęsy jedwabne i Mink/Silk, kleje bez formaldehydu, henna Nikk Mole, nowoczesna aparatura.</p></div>
+    <div class="card"><h3 style="font-size:22px;margin-bottom:8px">Bezpieczeństwo</h3><p class="muted" style="margin:0;font-size:15px">Ankieta kwalifikacyjna, próba uczuleniowa na życzenie, sterylizacja narzędzi, opis przeciwwskazań przy każdym zabiegu.</p></div>
+    <div class="card"><h3 style="font-size:22px;margin-bottom:8px">Uczciwa informacja</h3><p class="muted" style="margin:0;font-size:15px">Mówimy, czego się spodziewać i kiedy zabieg nie ma sensu. Przy zabiegach na twarz podajemy źródła.</p></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="head"><p class="eyebrow">Zespół</p><h2>Kto się Tobą zajmie</h2></div>
+  <div class="grid c4" id="zespol"></div>
+</div></section>
+
+<section class="band section center"><div class="wrap">
+  <h2>Zapraszamy na Brynów</h2>
+  <p class="muted" style="margin:14px 0 28px"><span data-u="adres_ulica">ul. Kościuszki 180, 1 piętro</span>, <span data-u="adres_miasto">Katowice</span> · <span data-u="godziny">Pon–Pt 8:00–20:00</span></p>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a class="btn" data-href-u="booksy" href="https://perfecteye.booksy.com" data-conv="booksy" rel="noopener">Umów wizytę</a><a class="btn ghost" href="../kontakt/">Dojazd i kontakt</a></div>
+</div></section>
+
+<div id="chrome-bottom"></div>
+<script src="../assets/site.js"></script>
+<script>
+(async () => {
+  const z = await PE.load('zespol');
+  document.getElementById('zespol').innerHTML = z.map(p => `<div class="card" style="padding:0"><img src="../${p.foto}" alt="${p.imie}" loading="lazy" style="aspect-ratio:1/1;object-fit:cover;width:100%;border-bottom:1px solid var(--gold)" onerror="this.outerHTML='<div class=ph style=aspect-ratio:1/1;min-height:0;border-bottom:1px solid var(--gold)>[Portret: ${p.imie}]</div>'"><div style="padding:22px"><h3 style="font-size:24px;margin-bottom:6px">${p.imie}</h3><p class="eyebrow" style="font-size:12px;letter-spacing:.14em;margin-bottom:${p.opis ? 10 : 0}px">${p.rola}</p>${p.opis ? `<p class="muted" style="margin:0;font-size:15px">${p.opis}</p>` : ''}</div></div>`).join('');
+})();
+</script>
+</body>
+</html>
