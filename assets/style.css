@@ -165,3 +165,15 @@ header.site .logo,header.site .tel,header.site .btn,header.site .social{flex-shr
 @media (min-width:761px){nav.main{gap:6px 18px;font-size:12.5px;justify-content:center}}
 @media (max-width:1300px){header.site .social{display:none}}
 @media (min-width:761px) and (max-width:1050px){header.site .tel{display:none}}
+
+/* przed i po */
+.ba{margin:0;border:1px solid var(--line3);background:var(--bg2,#16130F)}
+.ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;position:relative}
+.ba-pair>*{aspect-ratio:3/4;width:100%;object-fit:cover;min-height:0!important;font-size:13px}
+.ba-pair::before,.ba-pair::after{position:absolute;top:10px;z-index:2;font-size:11px;letter-spacing:.2em;padding:4px 10px;background:rgba(14,12,10,.8);color:var(--gold)}
+.ba-pair::before{content:"PRZED";left:10px}.ba-pair::after{content:"PO";left:calc(50% + 11px)}
+.ba figcaption{padding:16px 20px;display:flex;flex-direction:column;gap:4px}.ba figcaption b{font-family:var(--serif);font-size:22px;font-weight:500}.ba figcaption span{color:var(--muted2);font-size:14px}
+.booksy-hint{border-left:2px solid var(--gold);padding:12px 18px;background:rgba(201,169,110,.06);font-size:15px;margin:0 0 28px}
+.booksy-hint b{color:var(--gold);font-weight:500}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.thumbs img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border:1px solid var(--line3)}
+@media (max-width:760px){.thumbs{grid-template-columns:1fr 1fr}}

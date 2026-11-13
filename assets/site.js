@@ -25,7 +25,7 @@
     const link = (href, label, cls = '') =>
       `<a href="${ROOT}${href}" class="${cls}${here === href.replace(/\/$/, '').replace('index.html','') ? ' on' : ''}">${label}</a>`;
     const topbar = u.pasek_promo_wlaczony && u.pasek_promo
-      ? `<div class="topbar"><a href="${u.pasek_promo_link}">${u.pasek_promo}</a></div>` : '';
+      ? `<div class="topbar"><a href="${/booksy\.com/.test(u.pasek_promo_link || '') ? u.booksy : (u.pasek_promo_link || u.booksy)}">${u.pasek_promo}</a></div>` : '';
     const header = `
       <header class="site"><div class="wrap">
         <a class="logo" href="${ROOT}"><b class="gold-text">PERFECT EYE</b><small>KATOWICE · OD ${u.rok_zalozenia}</small></a>
@@ -56,6 +56,7 @@
     document.querySelectorAll('a[data-href-u]').forEach(el => { el.href = u[el.dataset.hrefU]; });
     // każdy link do Booksy = bezprowizyjny link salonu (Booksy nie pobiera prowizji Boost)
     document.querySelectorAll('a[href*="booksy.com"]').forEach(el => { if (/perfecteye\.booksy\.com/.test(el.href)) el.href = u.booksy; });
+    document.querySelectorAll('a').forEach(ext);
   }
 
   // --- zgoda cookies (Consent Mode v2) ---
@@ -74,6 +75,11 @@
     document.getElementById('ck-ok').onclick = () => set('granted');
     document.getElementById('ck-no').onclick = () => set('denied');
   }
+
+  // --- Booksy, Facebook, Instagram i mapy otwieramy w nowej karcie ---
+  const EXT = /(booksy\.com|facebook\.com|instagram\.com|google\.[a-z.]+\/maps)/;
+  const ext = a => { if (a && a.href && EXT.test(a.href)) { a.target = '_blank'; a.rel = 'noopener'; } };
+  document.addEventListener('click', e => ext(e.target.closest('a')), true);
 
   // --- zdarzenia konwersji (Booksy, telefon) ---
   document.addEventListener('click', e => {
