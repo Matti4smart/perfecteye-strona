@@ -122,7 +122,7 @@ content:
         fields:
           - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
-          - { name: cena, label: Cena (zł lub tekst), type: string }
+          - { name: cena, label: Cena (zł), type: number }
           - { name: czas, label: Czas (min), type: number }
       - name: twarz
         label: Zabiegi na twarz
