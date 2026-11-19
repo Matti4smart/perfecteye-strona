@@ -306,7 +306,7 @@
     {
       "id": "lam-rzes",
       "nazwa": "Lifting + keratynowa laminacja rzęs",
-      "cena": 200,
+      "cena": 179,
       "czas": 90
     },
     {
@@ -493,13 +493,13 @@
     {
       "id": "dep-wasik",
       "nazwa": "Depilacja wąsika woskiem",
-      "cena": 41,
+      "cena": 30,
       "czas": 15
     },
     {
       "id": "dep-broda",
       "nazwa": "Depilacja brody woskiem",
-      "cena": 41,
+      "cena": 30,
       "czas": 15
     },
     {
