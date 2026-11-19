@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aktualności i promocje – PerfectEye, salon rzęs i kosmetologii Katowice</title>
+<meta name="description" content="Aktualne promocje, nowe zabiegi i wydarzenia w salonie PerfectEye w Katowicach-Brynowie. Rzęsy, brwi, zabiegi na twarz i szkolenia.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.perfecteye.pl/aktualnosci/">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<script src="../assets/head.js" data-root="../"></script>
+</head>
+<body data-page="aktualnosci/">
+<div id="chrome-top"></div>
+<nav class="wrap crumbs" aria-label="Ścieżka"><a href="../">Strona główna</a> / <span style="color:var(--text)">Aktualności</span></nav>
+
+<section class="section tight"><div class="wrap">
+  <p class="eyebrow line">Aktualności</p>
+  <h1 style="font-size:clamp(40px,6vw,64px)">Promocje i nowości</h1>
+  <p class="lead" style="max-width:760px">Aktualne promocje cenowe, nowe zabiegi i ważne wydarzenia w salonie. Promocje rezerwujesz w Booksy lub telefonicznie.</p>
+  <div class="news-list" id="news" style="margin-top:40px"></div>
+  <p class="muted" id="news-empty" hidden>Obecnie nie mamy aktywnych promocji. Zajrzyj na nasz <a data-href-u="instagram" href="https://www.instagram.com/perfecteye.pl/">Instagram</a> lub <a data-href-u="facebook" href="https://www.facebook.com/rzesy.perfecteye">Facebook</a>.</p>
+</div></section>
+
+<section class="band section" id="archiwum" hidden><div class="wrap">
+  <div class="head"><p class="eyebrow">Archiwum</p><h2>Zakończone promocje</h2></div>
+  <div class="news-list" id="news-old"></div>
+</div></section>
+
+<div id="chrome-bottom"></div>
+<script src="../assets/site.js"></script>
+<script>
+(async () => {
+  const { active, archive } = PE.newsSplit(await PE.load('aktualnosci'));
+  document.getElementById('news').innerHTML = active.map(p => PE.newsCard(p, true)).join('');
+  document.getElementById('news-empty').hidden = active.length > 0;
+  if (archive.length) { document.getElementById('archiwum').hidden = false; document.getElementById('news-old').innerHTML = archive.slice(0, 9).map(p => PE.newsCard(p, true, true)).join(''); }
+})();
+</script>
+</body>
+</html>
