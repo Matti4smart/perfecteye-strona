@@ -5,11 +5,6 @@
     "kategoria": "rzesy"
   },
   {
-    "plik": "zdjecia/galeria/rzesy-2.jpg",
-    "opis": "Naturalne zagęszczenie rzęs",
-    "kategoria": "rzesy"
-  },
-  {
     "plik": "zdjecia/galeria/rzesy-3.jpg",
     "opis": "Przedłużanie rzęs – w trakcie zabiegu",
     "kategoria": "rzesy"
@@ -27,6 +22,11 @@
   {
     "plik": "zdjecia/galeria/rzesy-6.jpg",
     "opis": "Precyzyjna aplikacja rzęs",
+    "kategoria": "rzesy"
+  },
+  {
+    "plik": "zdjecia/galeria/rzesy-2.jpg",
+    "opis": "Naturalne zagęszczenie rzęs",
     "kategoria": "rzesy"
   },
   {
