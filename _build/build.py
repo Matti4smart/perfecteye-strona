@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 """Generuje podstrony zabiegów (twarz/<slug>/) i szkoleń (akademia/<slug>/) z JSON + szablonu."""
-import json, os, html
+import json, os, html, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, '_build'))
+import ceny
 def rd(p): return json.load(open(os.path.join(ROOT, '_build', p), encoding='utf-8'))
 def wr(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    # ceny: w danych strukturalnych zwykły tekst, w treści <span data-c> (aktualizowany z cennika w przeglądarce)
+    content = re.sub(r'(<script type="application/ld\+json"[^>]*>)(.*?)(</script>)', lambda m: m.group(1) + ceny.render(m.group(2), False) + m.group(3), content, flags=re.S)
+    content = re.sub(r'(<meta [^>]*content=")([^"]*)(")', lambda m: m.group(1) + ceny.render(m.group(2), False) + m.group(3), content)
+    content = re.sub(r'(<title>)(.*?)(</title>)', lambda m: m.group(1) + ceny.render(m.group(2), False) + m.group(3), content)
+    content = ceny.render(content)
+    assert '{{' not in content, path
     open(path, 'w', encoding='utf-8').write(content)
 CEN = json.load(open(os.path.join(ROOT, 'data', 'cennik.json'), encoding='utf-8'))
 def booksy_names(key, slug):
@@ -45,6 +53,13 @@ FOOT = '''
 </body>
 </html>
 '''
+def faq_ld(faq):
+    if not faq: return ''
+    d = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq]}
+    return '<script type="application/ld+json">' + json.dumps(d, ensure_ascii=False) + '</script>'
+def faq_html(faq, h='Pytania'):
+    if not faq: return ''
+    return f'<section class="wrap" style="max-width:860px;padding-bottom:88px"><h2 style="font-size:44px;margin-bottom:24px">{h}</h2>' + ''.join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q,a in faq) + '</section>'
 def li(items): return ''.join(f'<li>{html.escape(x)}</li>' for x in items)
 
 def zabieg(z):
@@ -89,7 +104,7 @@ def zabieg(z):
 <section class="section"><div class="wrap grid c3">
   <div class="card"><h3 style="color:var(--gold);margin-bottom:18px">Dla kogo</h3><ul class="muted" style="margin:0;padding-left:20px;line-height:1.9">{li(z['dla_kogo'])}</ul></div>
   <div class="card"><h3 style="color:var(--gold);margin-bottom:18px">Czego się spodziewać</h3><ul class="muted" style="margin:0;padding-left:20px;line-height:1.9">{li(z['efekty'])}</ul></div>
-  <div class="card gold"><h3 style="color:var(--gold);margin-bottom:18px">Przeciwwskazania</h3><p class="muted" style="margin:0">{html.escape(z['przeciw'])} W razie wątpliwości umów <a href="https://perfecteye.booksy.com" rel="noopener">konsultację (50 zł)</a>.</p></div>
+  <div class="card gold"><h3 style="color:var(--gold);margin-bottom:18px">Przeciwwskazania</h3><p class="muted" style="margin:0">{html.escape(z['przeciw'])} W razie wątpliwości umów <a href="https://perfecteye.booksy.com" rel="noopener">konsultację ({{dod-konsultacja}})</a>.</p></div>
 </div></section>
 
 <section class="wrap" style="max-width:1040px;padding-bottom:88px">
@@ -100,7 +115,7 @@ def zabieg(z):
 
 <section class="wrap" style="max-width:860px;padding-bottom:88px"><h2 style="font-size:44px;margin-bottom:24px">Pytania</h2>{faq}</section>
 {zr}'''
-    return HEAD.format(title=f"{z['tytul']} Katowice – PerfectEye", meta=html.escape(z['meta'],quote=True), noindex=NOINDEX, path=f"twarz/{z['slug']}", ld=f'<script type="application/ld+json">{ld}</script>', section='twarz', section_label='Zabiegi na twarz', crumb=html.escape(z['tytul'])) + body + FOOT.format(cta_h=f"Zarezerwuj: {html.escape(z['tytul'])}", cta_href='https://perfecteye.booksy.com', cta_conv='booksy', cta_btn='Wybierz termin w Booksy')
+    return HEAD.format(title=f"{z['tytul']} Katowice – PerfectEye", meta=html.escape(z['meta'],quote=True), noindex=NOINDEX, path=f"twarz/{z['slug']}", ld=f'<script type="application/ld+json">{ld}</script>' + faq_ld(z['faq']), section='twarz', section_label='Zabiegi na twarz', crumb=html.escape(z['tytul'])) + body + FOOT.format(cta_h=f"Zarezerwuj: {html.escape(z['tytul'])}", cta_href='https://perfecteye.booksy.com', cta_conv='booksy', cta_btn='Wybierz termin w Booksy')
 
 def szkolenie(s):
     ld = json.dumps({"@context":"https://schema.org","@type":"Course","name":s['tytul'],"description":s['lead'],"provider":{"@type":"Organization","name":"Akademia PerfectEye","sameAs":"https://www.perfecteye.pl"}}, ensure_ascii=False)
@@ -136,8 +151,9 @@ def szkolenie(s):
     <p class="muted"><b style="color:var(--text);font-weight:500">Dalej:</b> {html.escape(s['nastepne'])}</p>
     <p class="muted2" style="font-size:15px">Zaliczka przy zapisie rezerwuje termin i jest odliczana od ceny szkolenia.</p>
   </div>
-</div></section>'''
-    return HEAD.format(title=f"{s['tytul']} – szkolenie Katowice | Akademia PerfectEye", meta=html.escape(s['meta'],quote=True), noindex=NOINDEX, path=f"akademia/{s['slug']}", ld=f'<script type="application/ld+json">{ld}</script>', section='akademia', section_label='Akademia', crumb=html.escape(s['tytul'])) + body + FOOT.format(cta_h='Zapytaj o najbliższy termin', cta_href='https://perfecteye.booksy.com', cta_conv='booksy', cta_btn='Zapisz się w Booksy')
+</div></section>
+{faq_html(s.get('faq'), 'Najczęstsze pytania o kurs')}'''
+    return HEAD.format(title=f"{s['tytul']} – szkolenie Katowice | Akademia PerfectEye", meta=html.escape(s['meta'],quote=True), noindex=NOINDEX, path=f"akademia/{s['slug']}", ld=f'<script type="application/ld+json">{ld}</script>' + faq_ld(s.get('faq')), section='akademia', section_label='Akademia', crumb=html.escape(s['tytul'])) + body + FOOT.format(cta_h='Zapytaj o najbliższy termin', cta_href='https://perfecteye.booksy.com', cta_conv='booksy', cta_btn='Zapisz się w Booksy')
 
 if __name__ == '__main__':
     n = 0

@@ -4,9 +4,9 @@
     "tytul": "Oczyszczanie wodorowe 7 w 1",
     "tytul_h1": "Oczyszczanie wodorowe <em>7 w 1</em> w Katowicach",
     "kat": "Zabieg na twarz · 7 etapów",
-    "meta": "Oczyszczanie wodorowe twarzy 7 w 1 w Katowicach: peeling kawitacyjny, woda wodorowa, nawilżenie, oksybrazja, ultradźwięki, chromoterapia, krioterapia. Od 259 zł. PerfectEye, Brynów.",
+    "meta": "Oczyszczanie wodorowe twarzy 7 w 1 w Katowicach: peeling kawitacyjny, woda wodorowa, nawilżenie, oksybrazja, ultradźwięki, chromoterapia, krioterapia. PerfectEye, Brynów.",
     "lead": "Jeden zabieg, siedem kroków pielęgnacji: złuszczenie, oczyszczenie, nawilżenie, dotlenienie i wyciszenie skóry. Dla skóry zmęczonej, z rozszerzonymi porami i nierównym kolorytem.",
-    "cena_od": "od 259 zł",
+    "cena_od": "{{od tw-wodorowe-7w1.twarz|tw-wodorowe-5w1.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Czas",
     "trzeci": "45–80 min",
@@ -59,27 +59,27 @@
     "cennik": [
       [
         "Oczyszczanie wodorowe 7 w 1",
-        "299 zł",
-        "329 zł",
-        "359 zł"
+        "{{tw-wodorowe-7w1.twarz}}",
+        "{{tw-wodorowe-7w1.szyja}}",
+        "{{tw-wodorowe-7w1.dekolt}}"
       ],
       [
         "Oczyszczanie wodorowe 5 w 1",
-        "259 zł",
-        "279 zł",
-        "299 zł"
+        "{{tw-wodorowe-5w1.twarz}}",
+        "{{tw-wodorowe-5w1.szyja}}",
+        "{{tw-wodorowe-5w1.dekolt}}"
       ],
       [
         "Pakiet 4 × 7 w 1",
-        "1146 zł",
+        "{{pak-wodorowe-7w1.twarz}}",
         "—",
-        "1386 zł"
+        "{{pak-wodorowe-7w1.dekolt}}"
       ],
       [
         "Pakiet 4 × 5 w 1",
-        "986 zł",
+        "{{pak-wodorowe-5w1.twarz}}",
         "—",
-        "1146 zł"
+        "{{pak-wodorowe-5w1.dekolt}}"
       ]
     ],
     "faq": [
@@ -129,12 +129,12 @@
     "tytul": "Lifting twarzy falą radiową",
     "tytul_h1": "Lifting twarzy <em>falą radiową</em> – anti-ageing",
     "kat": "Anti-ageing · bez igieł",
-    "meta": "Lifting twarzy falą radiową (RF, radiofrekwencja) w Katowicach: nieinwazyjne napinanie skóry, pobudzenie kolagenu, poprawa owalu. Od 240 zł. PerfectEye Brynów.",
+    "meta": "Lifting twarzy falą radiową (RF, radiofrekwencja) w Katowicach: nieinwazyjne napinanie skóry, pobudzenie kolagenu, poprawa owalu. PerfectEye Brynów.",
     "lead": "Radiofrekwencja to technologia napinania skóry, która wykorzystuje fale radiowe do stymulacji produkcji kolagenu. Bezigłowa, nieinwazyjna metoda liftingująca, wygładzająca i ujędrniająca, która poprawia owal twarzy.",
-    "cena_od": "od 240 zł",
+    "cena_od": "{{od tw-rf.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Pod oczy",
-    "trzeci": "110 zł",
+    "trzeci": "{{tw-rf-oczy.twarz}}",
     "foto": "[Zdjęcie: głowica RF na policzku, owal twarzy]",
     "etapy": [
       [
@@ -158,7 +158,7 @@
         "Zimno zamyka pory i utrwala efekt napięcia."
       ]
     ],
-    "etapy_uwaga": "Zabieg zaczynamy od tonizacji skóry. Lifting okolic oczu wykonujemy osobną, mniejszą głowicą (110 zł, 15 min).",
+    "etapy_uwaga": "Zabieg zaczynamy od tonizacji skóry. Lifting okolic oczu wykonujemy osobną, mniejszą głowicą ({{tw-rf-oczy.twarz}}, 15 min).",
     "dla_kogo": [
       "skóra traci jędrność, „opada” owal",
       "zmarszczki mimiczne i drobne linie",
@@ -176,21 +176,21 @@
     "cennik": [
       [
         "Lifting twarzy falą radiową",
-        "240 zł",
-        "260 zł",
-        "280 zł"
+        "{{tw-rf.twarz}}",
+        "{{tw-rf.szyja}}",
+        "{{tw-rf.dekolt}}"
       ],
       [
         "Lifting okolic oczu falą radiową",
-        "110 zł",
+        "{{tw-rf-oczy.twarz}}",
         "—",
         "—"
       ],
       [
         "Pakiet 4 zabiegi",
-        "910 zł",
+        "{{pak-rf.twarz}}",
         "—",
-        "1070 zł"
+        "{{pak-rf.dekolt}}"
       ]
     ],
     "faq": [
@@ -224,9 +224,9 @@
     "tytul": "Oksybrazja z infuzją tlenową",
     "tytul_h1": "Oksybrazja <em>z infuzją tlenową</em>",
     "kat": "Zabieg na twarz · blask od razu",
-    "meta": "Oksybrazja z infuzją tlenową w Katowicach: dogłębne oczyszczenie, dotlenienie, nawilżenie i wyrównanie kolorytu skóry. Od 235 zł. PerfectEye Brynów.",
+    "meta": "Oksybrazja z infuzją tlenową w Katowicach: dogłębne oczyszczenie, dotlenienie, nawilżenie i wyrównanie kolorytu skóry. PerfectEye Brynów.",
     "lead": "Zabieg zapewnia dogłębne oczyszczenie, poprawia nawilżenie i wyrównuje koloryt, nadając skórze zdrowy, promienny wygląd już po pierwszym razie. Dzięki tlenowi skóra jest lepiej dotleniona, ujędrniona i gotowa na dalszą pielęgnację.",
-    "cena_od": "od 235 zł",
+    "cena_od": "{{od tw-oksybrazja.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Czas",
     "trzeci": "45 min",
@@ -267,15 +267,15 @@
     "cennik": [
       [
         "Oksybrazja z infuzją tlenową + ampułka",
-        "235 zł",
-        "255 zł",
-        "275 zł"
+        "{{tw-oksybrazja.twarz}}",
+        "{{tw-oksybrazja.szyja}}",
+        "{{tw-oksybrazja.dekolt}}"
       ],
       [
         "Zabieg bankietowy (oksybrazja + RF + maska)",
-        "259 zł",
-        "279 zł",
-        "299 zł"
+        "{{tw-bankietowy.twarz}}",
+        "{{tw-bankietowy.szyja}}",
+        "{{tw-bankietowy.dekolt}}"
       ]
     ],
     "faq": [
@@ -295,9 +295,9 @@
     "tytul": "Mikrodermabrazja",
     "tytul_h1": "Mikrodermabrazja <em>diamentowa</em>",
     "kat": "Zabieg na twarz · złuszczanie",
-    "meta": "Mikrodermabrazja w Katowicach: mechaniczne złuszczanie naskórka, wygładzenie, redukcja przebarwień i blizn potrądzikowych. Od 190 zł. PerfectEye Brynów.",
+    "meta": "Mikrodermabrazja w Katowicach: mechaniczne złuszczanie naskórka, wygładzenie, redukcja przebarwień i blizn potrądzikowych. PerfectEye Brynów.",
     "lead": "Bezinwazyjne złuszczanie naskórka, które natychmiast poprawia wygląd skóry. Delikatne, mechaniczne usuwanie martwych komórek stymuluje produkcję nowego kolagenu i elastyny – skóra staje się gładsza, bardziej elastyczna i młodsza.",
-    "cena_od": "od 190 zł",
+    "cena_od": "{{od tw-mikrodermabrazja.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Czas",
     "trzeci": "60 min",
@@ -338,9 +338,9 @@
     "cennik": [
       [
         "Mikrodermabrazja",
-        "190 zł",
-        "220 zł",
-        "250 zł"
+        "{{tw-mikrodermabrazja.twarz}}",
+        "{{tw-mikrodermabrazja.szyja}}",
+        "{{tw-mikrodermabrazja.dekolt}}"
       ]
     ],
     "faq": [
@@ -360,9 +360,9 @@
     "tytul": "Sonoforeza – mezoterapia ultradźwiękowa",
     "tytul_h1": "Sonoforeza – <em>mezoterapia</em> ultradźwiękowa",
     "kat": "Zabieg na twarz · bez igieł",
-    "meta": "Sonoforeza (mezoterapia ultradźwiękowa) w Katowicach: odżywienie, nawilżenie, pobudzenie kolagenu i elastyny bez igieł. Od 150 zł. PerfectEye Brynów.",
+    "meta": "Sonoforeza (mezoterapia ultradźwiękowa) w Katowicach: odżywienie, nawilżenie, pobudzenie kolagenu i elastyny bez igieł. PerfectEye Brynów.",
     "lead": "Masaż ultradźwiękowy, który korzystnie wpływa na metabolizm komórek skóry: pobudza produkcję kolagenu i elastyny, poprawia ukrwienie i regeneruje. Ultradźwięki docierają znacznie głębiej niż tradycyjne kosmetyki.",
-    "cena_od": "od 150 zł",
+    "cena_od": "{{od tw-sonoforeza.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Czas",
     "trzeci": "30 min",
@@ -381,7 +381,7 @@
         "Zimno obkurcza naczynka, zamyka pory i wycisza skórę."
       ]
     ],
-    "etapy_uwaga": "Sonoforezę łączymy też z peelingiem kawitacyjnym (210 zł) – duet, który najpierw oczyszcza, a potem odżywia.",
+    "etapy_uwaga": "Sonoforezę łączymy też z peelingiem kawitacyjnym ({{tw-peeling-sonoforeza.twarz}}) – duet, który najpierw oczyszcza, a potem odżywia.",
     "dla_kogo": [
       "skóra odwodniona, mało elastyczna",
       "trądzik i podrażnienia",
@@ -399,15 +399,15 @@
     "cennik": [
       [
         "Sonoforeza",
-        "150 zł",
-        "170 zł",
-        "190 zł"
+        "{{tw-sonoforeza.twarz}}",
+        "{{tw-sonoforeza.szyja}}",
+        "{{tw-sonoforeza.dekolt}}"
       ],
       [
         "Peeling kawitacyjny + sonoforeza",
-        "210 zł",
-        "230 zł",
-        "260 zł"
+        "{{tw-peeling-sonoforeza.twarz}}",
+        "{{tw-peeling-sonoforeza.szyja}}",
+        "{{tw-peeling-sonoforeza.dekolt}}"
       ]
     ],
     "faq": [
@@ -427,9 +427,9 @@
     "tytul": "Peeling kawitacyjny + sonoforeza",
     "tytul_h1": "Peeling kawitacyjny <em>+ sonoforeza</em>",
     "kat": "Zabieg na twarz · oczyszczanie",
-    "meta": "Peeling kawitacyjny z sonoforezą w Katowicach: głębokie oczyszczenie bez podrażnień i natychmiastowe odżywienie skóry. Od 210 zł. PerfectEye Brynów.",
+    "meta": "Peeling kawitacyjny z sonoforezą w Katowicach: głębokie oczyszczenie bez podrażnień i natychmiastowe odżywienie skóry. PerfectEye Brynów.",
     "lead": "Duet, który potrafi zdziałać cuda: peeling kawitacyjny głęboko oczyszcza bez podrażnień, a sonoforeza od razu odżywia i nawilża. Szybki sposób na świeżą, gładką skórę – i chwila relaksu.",
-    "cena_od": "od 210 zł",
+    "cena_od": "{{od tw-peeling-sonoforeza.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Czas",
     "trzeci": "60 min",
@@ -469,9 +469,9 @@
     "cennik": [
       [
         "Peeling kawitacyjny + sonoforeza",
-        "210 zł",
-        "230 zł",
-        "260 zł"
+        "{{tw-peeling-sonoforeza.twarz}}",
+        "{{tw-peeling-sonoforeza.szyja}}",
+        "{{tw-peeling-sonoforeza.dekolt}}"
       ]
     ],
     "faq": [
@@ -487,9 +487,9 @@
     "tytul": "Zabieg bankietowy",
     "tytul_h1": "Zabieg bankietowy – <em>efekt „wow”</em> bez ryzyka",
     "kat": "Na wielkie wyjście",
-    "meta": "Zabieg bankietowy w Katowicach: szybkie rozświetlenie, napięcie i nawilżenie skóry przed weselem, galą czy sesją. Bez rekonwalescencji. Od 259 zł. PerfectEye Brynów.",
+    "meta": "Zabieg bankietowy w Katowicach: szybkie rozświetlenie, napięcie i nawilżenie skóry przed weselem, galą czy sesją. Bez rekonwalescencji. PerfectEye Brynów.",
     "lead": "Szybkie rozświetlenie i napięcie skóry przed ważnym wydarzeniem. Łączymy oksybrazję, infuzję tlenową i fale radiowe, tak by skóra wyglądała na wypoczętą i promienną tego samego dnia – bez zaczerwienień i bez ryzyka.",
-    "cena_od": "od 259 zł",
+    "cena_od": "{{od tw-bankietowy.twarz}}",
     "obszar": "twarz · szyja · dekolt",
     "trzeci_label": "Kiedy",
     "trzeci": "1–2 dni przed",
@@ -527,9 +527,9 @@
     "cennik": [
       [
         "Zabieg bankietowy",
-        "259 zł",
-        "279 zł",
-        "299 zł"
+        "{{tw-bankietowy.twarz}}",
+        "{{tw-bankietowy.szyja}}",
+        "{{tw-bankietowy.dekolt}}"
       ]
     ],
     "faq": [
