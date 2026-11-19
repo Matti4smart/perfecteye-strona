@@ -1,109 +1,620 @@
 {
   "uwaga": "Ceny standardowe z Booksy (12.11.2026). Edytuj tu – strona czyta ten plik.",
   "rzesy_od_zera": [
-    { "nazwa": "Rzęsy jedwabne 1:1 „1D”", "cena": 199, "czas": 120 },
-    { "nazwa": "Rzęsy jedwabne 1:1/2:1 „1D/2D”", "cena": 205, "czas": 120 },
-    { "nazwa": "Rzęsy jedwabne 1:1 „L” – najmocniejsze podkręcenie", "cena": 209, "czas": 120 },
-    { "nazwa": "Rzęsy jedwabne 2:1 „2D”", "cena": 229, "czas": 120 },
-    { "nazwa": "Rzęsy jedwabne 2:1/3:1 „2D/3D”", "cena": 239, "czas": 120 },
-    { "nazwa": "Rzęsy jedwabne 3:1 „3D”", "cena": 249, "czas": 120 },
-    { "nazwa": "Rzęsy jedwabne 3:1/5:1 „3D/5D”", "cena": 265, "czas": 120 },
-    { "nazwa": "Volume 5D", "cena": 269, "czas": 120 },
-    { "nazwa": "Volume Style 6D", "cena": 289, "czas": 120 },
-    { "nazwa": "Volume 10D Ultra Light", "cena": 299, "czas": 150 },
-    { "nazwa": "Hollywood Effect 15D", "cena": 329, "czas": 150 },
-    { "nazwa": "Mega Volume 18D", "cena": 369, "czas": 120 },
-    { "nazwa": "Wet Lashes – efekt mokrych rzęs", "cena": 309, "czas": 120 },
-    { "nazwa": "Kim Kardashian – Camellia Lashes", "cena": 309, "czas": 120 },
-    { "nazwa": "Wispy Magic Lashes", "cena": 289, "czas": 120 },
-    { "nazwa": "Medusa set", "cena": 289, "czas": 120 },
-    { "nazwa": "Medusa set z dolnymi rzęsami", "cena": 359, "czas": 180 },
-    { "nazwa": "Mink/Silk 1:1 – sztuczna norka", "cena": 219, "czas": 120 },
-    { "nazwa": "Mink/Silk 2:1 – sztuczna norka", "cena": 239, "czas": 150 },
-    { "nazwa": "Mink/Silk 3:1 – sztuczna norka", "cena": 259, "czas": 150 },
-    { "nazwa": "Dolne rzęsy", "cena": 149, "czas": 60 }
+    {
+      "id": "rz-1-1",
+      "nazwa": "Rzęsy jedwabne 1:1 „1D”",
+      "cena": 199,
+      "czas": 120
+    },
+    {
+      "id": "rz-1-1-2-1",
+      "nazwa": "Rzęsy jedwabne 1:1/2:1 „1D/2D”",
+      "cena": 205,
+      "czas": 120
+    },
+    {
+      "id": "rz-1-1-l",
+      "nazwa": "Rzęsy jedwabne 1:1 „L” – najmocniejsze podkręcenie",
+      "cena": 209,
+      "czas": 120
+    },
+    {
+      "id": "rz-2-1",
+      "nazwa": "Rzęsy jedwabne 2:1 „2D”",
+      "cena": 229,
+      "czas": 120
+    },
+    {
+      "id": "rz-2-1-3-1",
+      "nazwa": "Rzęsy jedwabne 2:1/3:1 „2D/3D”",
+      "cena": 239,
+      "czas": 120
+    },
+    {
+      "id": "rz-3-1",
+      "nazwa": "Rzęsy jedwabne 3:1 „3D”",
+      "cena": 249,
+      "czas": 120
+    },
+    {
+      "id": "rz-3-1-5-1",
+      "nazwa": "Rzęsy jedwabne 3:1/5:1 „3D/5D”",
+      "cena": 265,
+      "czas": 120
+    },
+    {
+      "id": "rz-volume-5d",
+      "nazwa": "Volume 5D",
+      "cena": 269,
+      "czas": 120
+    },
+    {
+      "id": "rz-volume-style-6d",
+      "nazwa": "Volume Style 6D",
+      "cena": 289,
+      "czas": 120
+    },
+    {
+      "id": "rz-volume-10d",
+      "nazwa": "Volume 10D Ultra Light",
+      "cena": 299,
+      "czas": 150
+    },
+    {
+      "id": "rz-hollywood-15d",
+      "nazwa": "Hollywood Effect 15D",
+      "cena": 329,
+      "czas": 150
+    },
+    {
+      "id": "rz-mega-volume-18d",
+      "nazwa": "Mega Volume 18D",
+      "cena": 369,
+      "czas": 120
+    },
+    {
+      "id": "rz-wet-lashes",
+      "nazwa": "Wet Lashes – efekt mokrych rzęs",
+      "cena": 309,
+      "czas": 120
+    },
+    {
+      "id": "rz-kim-kardashian",
+      "nazwa": "Kim Kardashian – Camellia Lashes",
+      "cena": 309,
+      "czas": 120
+    },
+    {
+      "id": "rz-wispy",
+      "nazwa": "Wispy Magic Lashes",
+      "cena": 289,
+      "czas": 120
+    },
+    {
+      "id": "rz-medusa-set",
+      "nazwa": "Medusa set",
+      "cena": 289,
+      "czas": 120
+    },
+    {
+      "id": "rz-medusa-dolne",
+      "nazwa": "Medusa set z dolnymi rzęsami",
+      "cena": 359,
+      "czas": 180
+    },
+    {
+      "id": "rz-mink-1-1",
+      "nazwa": "Mink/Silk 1:1 – sztuczna norka",
+      "cena": 219,
+      "czas": 120
+    },
+    {
+      "id": "rz-mink-2-1",
+      "nazwa": "Mink/Silk 2:1 – sztuczna norka",
+      "cena": 239,
+      "czas": 150
+    },
+    {
+      "id": "rz-mink-3-1",
+      "nazwa": "Mink/Silk 3:1 – sztuczna norka",
+      "cena": 259,
+      "czas": 150
+    },
+    {
+      "id": "rz-dolne-rzesy",
+      "nazwa": "Dolne rzęsy",
+      "cena": 149,
+      "czas": 60
+    }
   ],
   "rzesy_uzupelnienie": [
-    { "nazwa": "Rzęsy 1:1", "t1": 120, "t2": 140, "t3": 160 },
-    { "nazwa": "Rzęsy 1:1/2:1", "t1": 130, "t2": 150, "t3": 170 },
-    { "nazwa": "Rzęsy 1:1 „L”", "t1": 110, "t2": 130, "t3": 150 },
-    { "nazwa": "Rzęsy 2:1", "t1": 150, "t2": 170, "t3": 190 },
-    { "nazwa": "Rzęsy 2:1/3:1", "t1": 160, "t2": 180, "t3": 200 },
-    { "nazwa": "Rzęsy 3:1", "t1": 170, "t2": 190, "t3": 210 },
-    { "nazwa": "Rzęsy 3:1/5:1", "t1": 179, "t2": 199, "t3": 219 },
-    { "nazwa": "Volume 5D", "t1": 189, "t2": 209, "t3": 229 },
-    { "nazwa": "Volume Style 6D", "t1": 209, "t2": 229, "t3": 249 },
-    { "nazwa": "Volume 10D", "t1": 229, "t2": 249, "t3": 269 },
-    { "nazwa": "Hollywood 15D", "t1": 249, "t2": 269, "t3": 289 },
-    { "nazwa": "Mega Volume 18D", "t1": 289, "t2": 309, "t3": 329 },
-    { "nazwa": "Wet Lashes", "t1": 239, "t2": 259, "t3": 279 },
-    { "nazwa": "Kim Kardashian", "t1": 239, "t2": 259, "t3": 279 },
-    { "nazwa": "Wispy", "t1": 219, "t2": 239, "t3": 259 },
-    { "nazwa": "Medusa set z dolnymi", "t1": 289, "t2": 309, "t3": 329 },
-    { "nazwa": "Mink/Silk 1:1", "t1": 140, "t2": 160, "t3": 180 },
-    { "nazwa": "Mink/Silk 2:1", "t1": 150, "t2": 170, "t3": 190 },
-    { "nazwa": "Mink/Silk 3:1", "t1": 170, "t2": 190, "t3": 210 },
-    { "nazwa": "Dolne rzęsy", "t1": 70, "t2": 90, "t3": 109 }
+    {
+      "id": "uz-1-1",
+      "nazwa": "Rzęsy 1:1",
+      "t1": 120,
+      "t2": 140,
+      "t3": 160
+    },
+    {
+      "id": "uz-1-1-2-1",
+      "nazwa": "Rzęsy 1:1/2:1",
+      "t1": 130,
+      "t2": 150,
+      "t3": 170
+    },
+    {
+      "id": "uz-1-1-l",
+      "nazwa": "Rzęsy 1:1 „L”",
+      "t1": 110,
+      "t2": 130,
+      "t3": 150
+    },
+    {
+      "id": "uz-2-1",
+      "nazwa": "Rzęsy 2:1",
+      "t1": 150,
+      "t2": 170,
+      "t3": 190
+    },
+    {
+      "id": "uz-2-1-3-1",
+      "nazwa": "Rzęsy 2:1/3:1",
+      "t1": 160,
+      "t2": 180,
+      "t3": 200
+    },
+    {
+      "id": "uz-3-1",
+      "nazwa": "Rzęsy 3:1",
+      "t1": 170,
+      "t2": 190,
+      "t3": 210
+    },
+    {
+      "id": "uz-3-1-5-1",
+      "nazwa": "Rzęsy 3:1/5:1",
+      "t1": 179,
+      "t2": 199,
+      "t3": 219
+    },
+    {
+      "id": "uz-volume-5d",
+      "nazwa": "Volume 5D",
+      "t1": 189,
+      "t2": 209,
+      "t3": 229
+    },
+    {
+      "id": "uz-volume-style-6d",
+      "nazwa": "Volume Style 6D",
+      "t1": 209,
+      "t2": 229,
+      "t3": 249
+    },
+    {
+      "id": "uz-volume-10d",
+      "nazwa": "Volume 10D",
+      "t1": 229,
+      "t2": 249,
+      "t3": 269
+    },
+    {
+      "id": "uz-hollywood-15d",
+      "nazwa": "Hollywood 15D",
+      "t1": 249,
+      "t2": 269,
+      "t3": 289
+    },
+    {
+      "id": "uz-mega-volume-18d",
+      "nazwa": "Mega Volume 18D",
+      "t1": 289,
+      "t2": 309,
+      "t3": 329
+    },
+    {
+      "id": "uz-wet-lashes",
+      "nazwa": "Wet Lashes",
+      "t1": 239,
+      "t2": 259,
+      "t3": 279
+    },
+    {
+      "id": "uz-kim-kardashian",
+      "nazwa": "Kim Kardashian",
+      "t1": 239,
+      "t2": 259,
+      "t3": 279
+    },
+    {
+      "id": "uz-wispy",
+      "nazwa": "Wispy",
+      "t1": 219,
+      "t2": 239,
+      "t3": 259
+    },
+    {
+      "id": "uz-medusa-dolne",
+      "nazwa": "Medusa set z dolnymi",
+      "t1": 289,
+      "t2": 309,
+      "t3": 329
+    },
+    {
+      "id": "uz-mink-1-1",
+      "nazwa": "Mink/Silk 1:1",
+      "t1": 140,
+      "t2": 160,
+      "t3": 180
+    },
+    {
+      "id": "uz-mink-2-1",
+      "nazwa": "Mink/Silk 2:1",
+      "t1": 150,
+      "t2": 170,
+      "t3": 190
+    },
+    {
+      "id": "uz-mink-3-1",
+      "nazwa": "Mink/Silk 3:1",
+      "t1": 170,
+      "t2": 190,
+      "t3": 210
+    },
+    {
+      "id": "uz-dolne-rzesy",
+      "nazwa": "Dolne rzęsy",
+      "t1": 70,
+      "t2": 90,
+      "t3": 109
+    }
   ],
   "rzesy_dodatki": [
-    { "nazwa": "Konsultacja przedzabiegowa", "cena": 50, "czas": 15 },
-    { "nazwa": "Próba uczuleniowa", "cena": 35, "czas": 20 },
-    { "nazwa": "Luksusowe przygotowanie rzęs przed zabiegiem", "cena": 35, "czas": 10 },
-    { "nazwa": "Ściąganie rzęs po innym salonie", "cena": 55, "czas": 30 },
-    { "nazwa": "Ściąganie po innym salonie + założenie od zera", "cena": 25, "dopisek": "+ cena założenia", "czas": 20 }
+    {
+      "id": "dod-konsultacja",
+      "nazwa": "Konsultacja przedzabiegowa",
+      "cena": 50,
+      "czas": 15
+    },
+    {
+      "id": "dod-proba-uczuleniowa",
+      "nazwa": "Próba uczuleniowa",
+      "cena": 35,
+      "czas": 20
+    },
+    {
+      "id": "dod-przygotowanie",
+      "nazwa": "Luksusowe przygotowanie rzęs przed zabiegiem",
+      "cena": 35,
+      "czas": 10
+    },
+    {
+      "id": "dod-sciaganie",
+      "nazwa": "Ściąganie rzęs po innym salonie",
+      "cena": 55,
+      "czas": 30
+    },
+    {
+      "id": "dod-sciaganie-z-zalozeniem",
+      "nazwa": "Ściąganie po innym salonie + założenie od zera",
+      "cena": 25,
+      "dopisek": "+ cena założenia",
+      "czas": 20
+    }
   ],
   "laminacja_brwi": [
-    { "nazwa": "Lifting + keratynowa laminacja rzęs", "cena": 179, "czas": 90 },
-    { "nazwa": "Laminacja (lifting) brwi", "cena": 130, "czas": 60 },
-    { "nazwa": "Combo – laminacja rzęs + brwi", "cena": 269, "czas": 135 },
-    { "nazwa": "Henna pudrowa Nikk Mole + architektura brwi", "cena": 99, "czas": 60 },
-    { "nazwa": "Farbka brwi + regulacja", "cena": 99, "czas": 30 },
-    { "nazwa": "Combo: regulacja + odżywienie brwi", "cena": 59, "czas": 30 },
-    { "nazwa": "Henna rzęs", "cena": 40, "czas": 30 },
-    { "nazwa": "Regulacja brwi", "cena": 35, "czas": 15 },
-    { "nazwa": "Zagęszczenie brwi naturalnym / jedwabnym włosem", "cena": 259, "czas": 120 },
-    { "nazwa": "Zagęszczenie brwi – korekta (1 / 2 / 3 tyg.)", "cena": "189 / 209 / 229", "czas": 90 },
-    { "nazwa": "Hybrid Lips – henna + lip stain", "cena": 120, "czas": 30 }
+    {
+      "id": "lam-rzes",
+      "nazwa": "Lifting + keratynowa laminacja rzęs",
+      "cena": 179,
+      "czas": 90
+    },
+    {
+      "id": "lam-brwi",
+      "nazwa": "Laminacja (lifting) brwi",
+      "cena": 130,
+      "czas": 60
+    },
+    {
+      "id": "lam-combo",
+      "nazwa": "Combo – laminacja rzęs + brwi",
+      "cena": 269,
+      "czas": 135
+    },
+    {
+      "id": "lam-henna-pudrowa",
+      "nazwa": "Henna pudrowa Nikk Mole + architektura brwi",
+      "cena": 99,
+      "czas": 60
+    },
+    {
+      "id": "lam-farbka-regulacja",
+      "nazwa": "Farbka brwi + regulacja",
+      "cena": 99,
+      "czas": 30
+    },
+    {
+      "id": "lam-regulacja-odzywienie",
+      "nazwa": "Combo: regulacja + odżywienie brwi",
+      "cena": 59,
+      "czas": 30
+    },
+    {
+      "id": "lam-henna-rzes",
+      "nazwa": "Henna rzęs",
+      "cena": 40,
+      "czas": 30
+    },
+    {
+      "id": "lam-regulacja-brwi",
+      "nazwa": "Regulacja brwi",
+      "cena": 35,
+      "czas": 15
+    },
+    {
+      "id": "lam-zageszczenie-brwi",
+      "nazwa": "Zagęszczenie brwi naturalnym / jedwabnym włosem",
+      "cena": 259,
+      "czas": 120
+    },
+    {
+      "id": "lam-zageszczenie-korekta",
+      "nazwa": "Zagęszczenie brwi – korekta (1 / 2 / 3 tyg.)",
+      "cena": "189 / 209 / 229",
+      "czas": 90
+    },
+    {
+      "id": "lam-hybrid-lips",
+      "nazwa": "Hybrid Lips – henna + lip stain",
+      "cena": 120,
+      "czas": 30
+    }
   ],
   "twarz": [
-    { "nazwa": "Oczyszczanie wodorowe 7 w 1", "twarz": 299, "szyja": 329, "dekolt": 359, "czas": 80, "slug": "oczyszczanie-wodorowe" },
-    { "nazwa": "Oczyszczanie wodorowe 5 w 1", "twarz": 259, "szyja": 279, "dekolt": 299, "czas": 45, "slug": "oczyszczanie-wodorowe" },
-    { "nazwa": "Zabieg bankietowy", "twarz": 259, "szyja": 279, "dekolt": 299, "czas": 60, "slug": "zabieg-bankietowy" },
-    { "nazwa": "Lifting twarzy falą radiową (RF) – anti-ageing", "twarz": 240, "szyja": 260, "dekolt": 280, "czas": 60, "slug": "lifting-fala-radiowa" },
-    { "nazwa": "Oksybrazja z infuzją tlenową + ampułka", "twarz": 235, "szyja": 255, "dekolt": 275, "czas": 45, "slug": "oksybrazja" },
-    { "nazwa": "Zabieg nawilżający", "twarz": 220, "szyja": 240, "dekolt": 260, "czas": 60, "slug": "" },
-    { "nazwa": "Peeling kawitacyjny + sonoforeza", "twarz": 210, "szyja": 230, "dekolt": 260, "czas": 60, "slug": "peeling-kawitacyjny" },
-    { "nazwa": "Mikrodermabrazja", "twarz": 190, "szyja": 220, "dekolt": 250, "czas": 60, "slug": "mikrodermabrazja" },
-    { "nazwa": "Sonoforeza – mezoterapia ultradźwiękowa", "twarz": 150, "szyja": 170, "dekolt": 190, "czas": 30, "slug": "sonoforeza" },
-    { "nazwa": "Zabieg wygładzająco-liftingujący kwas GABA/NANA", "twarz": 219, "czas": 60, "slug": "" },
-    { "nazwa": "Fotoodmładzanie twarzy z regeneracją komórkową", "twarz": 199, "czas": 60, "slug": "" },
-    { "nazwa": "Masaż Kobido – japoński lifting twarzy", "twarz": 199, "czas": 60, "slug": "" },
-    { "nazwa": "Fale radiowe pod oczy", "twarz": 110, "czas": 15, "slug": "lifting-fala-radiowa" }
+    {
+      "id": "tw-wodorowe-7w1",
+      "nazwa": "Oczyszczanie wodorowe 7 w 1",
+      "twarz": 299,
+      "szyja": 329,
+      "dekolt": 359,
+      "czas": 80,
+      "slug": "oczyszczanie-wodorowe"
+    },
+    {
+      "id": "tw-wodorowe-5w1",
+      "nazwa": "Oczyszczanie wodorowe 5 w 1",
+      "twarz": 259,
+      "szyja": 279,
+      "dekolt": 299,
+      "czas": 45,
+      "slug": "oczyszczanie-wodorowe"
+    },
+    {
+      "id": "tw-bankietowy",
+      "nazwa": "Zabieg bankietowy",
+      "twarz": 259,
+      "szyja": 279,
+      "dekolt": 299,
+      "czas": 60,
+      "slug": "zabieg-bankietowy"
+    },
+    {
+      "id": "tw-rf",
+      "nazwa": "Lifting twarzy falą radiową (RF) – anti-ageing",
+      "twarz": 240,
+      "szyja": 260,
+      "dekolt": 280,
+      "czas": 60,
+      "slug": "lifting-fala-radiowa"
+    },
+    {
+      "id": "tw-oksybrazja",
+      "nazwa": "Oksybrazja z infuzją tlenową + ampułka",
+      "twarz": 235,
+      "szyja": 255,
+      "dekolt": 275,
+      "czas": 45,
+      "slug": "oksybrazja"
+    },
+    {
+      "id": "tw-nawilzajacy",
+      "nazwa": "Zabieg nawilżający",
+      "twarz": 220,
+      "szyja": 240,
+      "dekolt": 260,
+      "czas": 60,
+      "slug": ""
+    },
+    {
+      "id": "tw-peeling-sonoforeza",
+      "nazwa": "Peeling kawitacyjny + sonoforeza",
+      "twarz": 210,
+      "szyja": 230,
+      "dekolt": 260,
+      "czas": 60,
+      "slug": "peeling-kawitacyjny"
+    },
+    {
+      "id": "tw-mikrodermabrazja",
+      "nazwa": "Mikrodermabrazja",
+      "twarz": 190,
+      "szyja": 220,
+      "dekolt": 250,
+      "czas": 60,
+      "slug": "mikrodermabrazja"
+    },
+    {
+      "id": "tw-sonoforeza",
+      "nazwa": "Sonoforeza – mezoterapia ultradźwiękowa",
+      "twarz": 150,
+      "szyja": 170,
+      "dekolt": 190,
+      "czas": 30,
+      "slug": "sonoforeza"
+    },
+    {
+      "id": "tw-gaba-nana",
+      "nazwa": "Zabieg wygładzająco-liftingujący kwas GABA/NANA",
+      "twarz": 219,
+      "czas": 60,
+      "slug": ""
+    },
+    {
+      "id": "tw-fotoodmladzanie",
+      "nazwa": "Fotoodmładzanie twarzy z regeneracją komórkową",
+      "twarz": 199,
+      "czas": 60,
+      "slug": ""
+    },
+    {
+      "id": "tw-kobido",
+      "nazwa": "Masaż Kobido – japoński lifting twarzy",
+      "twarz": 199,
+      "czas": 60,
+      "slug": ""
+    },
+    {
+      "id": "tw-rf-oczy",
+      "nazwa": "Fale radiowe pod oczy",
+      "twarz": 110,
+      "czas": 15,
+      "slug": "lifting-fala-radiowa"
+    }
   ],
   "depilacja": [
-    { "nazwa": "Depilacja wąsika woskiem", "cena": 30, "czas": 15 },
-    { "nazwa": "Depilacja brody woskiem", "cena": 30, "czas": 15 },
-    { "nazwa": "Depilacja nosa woskiem", "cena": 30, "czas": 15 },
-    { "nazwa": "Depilacja twarzy woskiem", "cena": 79, "czas": 30 }
+    {
+      "id": "dep-wasik",
+      "nazwa": "Depilacja wąsika woskiem",
+      "cena": 30,
+      "czas": 15
+    },
+    {
+      "id": "dep-broda",
+      "nazwa": "Depilacja brody woskiem",
+      "cena": 30,
+      "czas": 15
+    },
+    {
+      "id": "dep-nos",
+      "nazwa": "Depilacja nosa woskiem",
+      "cena": 30,
+      "czas": 15
+    },
+    {
+      "id": "dep-twarz",
+      "nazwa": "Depilacja twarzy woskiem",
+      "cena": 79,
+      "czas": 30
+    }
   ],
   "pakiety": [
-    { "nazwa": "4× Oczyszczanie wodorowe 7 w 1", "twarz": 1146, "dekolt": 1386 },
-    { "nazwa": "4× Oczyszczanie wodorowe 5 w 1", "twarz": 986, "dekolt": 1146 },
-    { "nazwa": "4× Fotoodmładzanie", "twarz": 1106, "dekolt": 1346 },
-    { "nazwa": "4× Lifting falą radiową", "twarz": 910, "dekolt": 1070 },
-    { "nazwa": "4× Zabieg nawilżający", "twarz": 830, "dekolt": 990 },
-    { "nazwa": "3× Masaż Kobido", "twarz": 599 }
+    {
+      "id": "pak-wodorowe-7w1",
+      "nazwa": "4× Oczyszczanie wodorowe 7 w 1",
+      "twarz": 1146,
+      "dekolt": 1386
+    },
+    {
+      "id": "pak-wodorowe-5w1",
+      "nazwa": "4× Oczyszczanie wodorowe 5 w 1",
+      "twarz": 986,
+      "dekolt": 1146
+    },
+    {
+      "id": "pak-fotoodmladzanie",
+      "nazwa": "4× Fotoodmładzanie",
+      "twarz": 1106,
+      "dekolt": 1346
+    },
+    {
+      "id": "pak-rf",
+      "nazwa": "4× Lifting falą radiową",
+      "twarz": 910,
+      "dekolt": 1070
+    },
+    {
+      "id": "pak-nawilzajacy",
+      "nazwa": "4× Zabieg nawilżający",
+      "twarz": 830,
+      "dekolt": 990
+    },
+    {
+      "id": "pak-kobido",
+      "nazwa": "3× Masaż Kobido",
+      "twarz": 599
+    }
   ],
   "szkolenia": [
-    { "nazwa": "Przedłużanie rzęs metodą 1:1 – Lash Beginner", "cena": 1290, "czas": "1 dzień, 8 h", "slug": "rzesy-1-1" },
-    { "nazwa": "Wet Lashes – mokry efekt", "cena": 1390, "czas": "1 dzień, 8 h", "slug": "wet-lashes" },
-    { "nazwa": "Kim Kardashian – Camellia Lashes", "cena": 1490, "czas": "1 dzień, 8 h", "slug": "kim-kardashian" },
-    { "nazwa": "Wispy Lashes", "cena": 1490, "czas": "1 dzień, 8 h", "slug": "wispy-lashes" },
-    { "nazwa": "Gotowe kępki 2D–6D", "cena": 990, "czas": "1 dzień, 8 h", "slug": "gotowe-kepki" },
-    { "nazwa": "Gotowe kępki 10D–20D", "cena": 990, "czas": "1 dzień, 8,5 h", "slug": "gotowe-kepki" },
-    { "nazwa": "Przedłużanie brwi włosem naturalnym – 1 dzień", "cena": 1390, "czas": "1 dzień, 8 h", "slug": "brwi-wlosem" },
-    { "nazwa": "Przedłużanie brwi włosem naturalnym – 2 dni", "cena": 2300, "czas": "2 dni, 11 h", "slug": "brwi-wlosem" },
-    { "nazwa": "Pakiet Start: 1:1 + gotowe kępki", "cena": 2390, "czas": "2 dni, 16 h", "slug": "pakiety" },
-    { "nazwa": "Pakiet Premium: Wispy/Kim + gotowe kępki", "cena": 3190, "czas": "2 dni, 16 h", "slug": "pakiety" }
+    {
+      "id": "szk-1-1",
+      "nazwa": "Przedłużanie rzęs metodą 1:1 – Lash Beginner",
+      "cena": 1290,
+      "czas": "1 dzień, 8 h",
+      "slug": "rzesy-1-1"
+    },
+    {
+      "id": "szk-wet",
+      "nazwa": "Wet Lashes – mokry efekt",
+      "cena": 1390,
+      "czas": "1 dzień, 8 h",
+      "slug": "wet-lashes"
+    },
+    {
+      "id": "szk-kim",
+      "nazwa": "Kim Kardashian – Camellia Lashes",
+      "cena": 1490,
+      "czas": "1 dzień, 8 h",
+      "slug": "kim-kardashian"
+    },
+    {
+      "id": "szk-wispy",
+      "nazwa": "Wispy Lashes",
+      "cena": 1490,
+      "czas": "1 dzień, 8 h",
+      "slug": "wispy-lashes"
+    },
+    {
+      "id": "szk-kepki-2d-6d",
+      "nazwa": "Gotowe kępki 2D–6D",
+      "cena": 990,
+      "czas": "1 dzień, 8 h",
+      "slug": "gotowe-kepki"
+    },
+    {
+      "id": "szk-kepki-10d-20d",
+      "nazwa": "Gotowe kępki 10D–20D",
+      "cena": 990,
+      "czas": "1 dzień, 8,5 h",
+      "slug": "gotowe-kepki"
+    },
+    {
+      "id": "szk-brwi-1d",
+      "nazwa": "Przedłużanie brwi włosem naturalnym – 1 dzień",
+      "cena": 1390,
+      "czas": "1 dzień, 8 h",
+      "slug": "brwi-wlosem"
+    },
+    {
+      "id": "szk-brwi-2d",
+      "nazwa": "Przedłużanie brwi włosem naturalnym – 2 dni",
+      "cena": 2300,
+      "czas": "2 dni, 11 h",
+      "slug": "brwi-wlosem"
+    },
+    {
+      "id": "szk-pakiet-start",
+      "nazwa": "Pakiet Start: 1:1 + gotowe kępki",
+      "cena": 2390,
+      "czas": "2 dni, 16 h",
+      "slug": "pakiety"
+    },
+    {
+      "id": "szk-pakiet-premium",
+      "nazwa": "Pakiet Premium: Wispy/Kim + gotowe kępki",
+      "cena": 3190,
+      "czas": "2 dni, 16 h",
+      "slug": "pakiety"
+    }
   ]
 }
