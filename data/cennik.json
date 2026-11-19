@@ -359,9 +359,21 @@
       "czas": 120
     },
     {
-      "id": "lam-zageszczenie-korekta",
-      "nazwa": "Zagęszczenie brwi – korekta (1 / 2 / 3 tyg.)",
-      "cena": "189 / 209 / 229",
+      "id": "lam-zageszczenie-korekta-1",
+      "nazwa": "Zagęszczenie brwi – korekta do 1 tyg.",
+      "cena": 189,
+      "czas": 90
+    },
+    {
+      "id": "lam-zageszczenie-korekta-2",
+      "nazwa": "Zagęszczenie brwi – korekta do 2 tyg.",
+      "cena": 209,
+      "czas": 90
+    },
+    {
+      "id": "lam-zageszczenie-korekta-3",
+      "nazwa": "Zagęszczenie brwi – korekta do 3 tyg.",
+      "cena": 229,
       "czas": 90
     },
     {
