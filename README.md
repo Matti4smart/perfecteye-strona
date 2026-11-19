@@ -26,3 +26,9 @@ Zdjęcia dodawane przez panel trafiają do folderu `zdjecia/`.
 5. Google Search Console: dodaj właściwość, prześlij sitemap.
 6. Wizytówka Google: link do strony z UTM `?utm_source=google&utm_medium=organic&utm_campaign=wizytowka`.
 7. Google Ads: sprawdź tag (Menedżer danych), utwórz konwersje ze zdarzeń GA4 `klik_booksy` i `klik_telefon`.
+
+## Ceny – jedno miejsce
+Wszystkie ceny pochodzą z `data/cennik.json` (CMS → „Cennik”). Każdy wiersz ma „Kod ceny” (`id`) – nie zmieniaj go.
+W treściach cena to `<span data-c="id">` – strona podmienia ją na aktualną z cennika (assets/site.js), także w danych FAQ dla Google.
+W plikach źródłowych (`_build/*.json`, strony) cenę wpisuje się znacznikiem: `{{id}}`, `{{id.twarz}}`, `{{od id1|id2}}` (najniższa) – patrz `_build/ceny.py`.
+`python3 _build/odswiez_ceny.py` – przebudowuje podstrony i wpisuje aktualne ceny na stałe do HTML (opcjonalnie, np. raz na jakiś czas).

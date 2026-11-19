@@ -32,18 +32,21 @@ content:
       - { name: rok_zalozenia, label: Rok założenia, type: number }
       - { name: godziny_sobota, label: Sobota, type: string }
 
-  - name: promocje
-    label: Promocje
-    description: Promocje widoczne na stronie głównej. Po dacie ważności znikają same.
+  - name: aktualnosci
+    label: Aktualności i promocje
+    description: Wpisy na stronie Aktualności (najnowsze 3 także na stronie głównej). Promocja po dacie „Ważne do” trafia do archiwum.
     type: file
-    path: data/promocje.json
+    path: data/aktualnosci.json
     list: true
     fields:
-      - { name: nazwa, label: Zabieg, type: string }
-      - { name: cena_promo, label: Cena promocyjna (zł), type: number }
-      - { name: cena_std, label: Cena standardowa (zł), type: number }
-      - { name: wazne_do, label: Ważne do, type: date }
-      - { name: link, label: Link (zwykle Booksy), type: string }
+      - { name: tytul, label: Tytuł, type: string }
+      - { name: typ, label: Rodzaj, type: select, options: { values: [Promocja, Nowość, Wydarzenie, Porada] } }
+      - { name: data, label: Data publikacji, type: date }
+      - { name: wazne_do, label: Ważne do (tylko promocje – można zostawić puste), type: date }
+      - { name: tekst, label: Treść (każda linia = nowy akapit; linia od „•” = punkt listy), type: text }
+      - { name: zdjecie, label: Zdjęcie (opcjonalnie), type: image }
+      - { name: link, label: Link przycisku (np. Booksy lub podstrona zabiegu), type: string }
+      - { name: link_tekst, label: Tekst przycisku, type: string }
 
   - name: opinie
     label: Opinie klientek
@@ -79,7 +82,7 @@ content:
 
   - name: cennik
     label: Cennik
-    description: Ceny na całej stronie. Zmiana tutaj = zmiana na stronie po ok. minucie.
+    description: "Jedyne miejsce zmiany cen – cena wpisana tutaj zmienia się wszędzie: w cenniku, na stronie głównej, w opisach zabiegów i szkoleń oraz w pytaniach i odpowiedziach. Zmiana widoczna po ok. minucie. Nie zmieniaj pola „Kod ceny”."
     type: file
     path: data/cennik.json
     fields:
@@ -88,6 +91,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: cena, label: Cena (zł), type: number }
           - { name: czas, label: Czas (min), type: number }
@@ -96,6 +100,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: t1, label: do 1 tyg. (zł), type: number }
           - { name: t2, label: do 2 tyg. (zł), type: number }
@@ -105,6 +110,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: cena, label: Cena (zł), type: number }
           - { name: dopisek, label: Dopisek, type: string }
@@ -114,6 +120,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: cena, label: Cena (zł lub tekst), type: string }
           - { name: czas, label: Czas (min), type: number }
@@ -122,6 +129,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: twarz, label: Twarz (zł), type: number }
           - { name: szyja, label: + szyja (zł), type: number }
@@ -133,6 +141,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: cena, label: Cena (zł), type: number }
           - { name: czas, label: Czas (min), type: number }
@@ -141,6 +150,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: twarz, label: Twarz (zł), type: number }
           - { name: dekolt, label: Twarz+szyja+dekolt (zł), type: number }
@@ -149,6 +159,7 @@ content:
         type: object
         list: true
         fields:
+          - { name: id, label: "Kod ceny – nie zmieniaj (łączy cenę z opisami na stronie)", type: string }
           - { name: nazwa, label: Nazwa, type: string }
           - { name: cena, label: Cena (zł), type: number }
           - { name: czas, label: Czas, type: string }
