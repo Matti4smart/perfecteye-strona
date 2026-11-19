@@ -1,5 +1,4 @@
 {
-  "uwaga": "Ceny standardowe z Booksy (12.11.2026). Edytuj tu – strona czyta ten plik.",
   "rzesy_od_zera": [
     {
       "id": "rz-1-1",
@@ -435,8 +434,7 @@
       "twarz": 220,
       "szyja": 240,
       "dekolt": 260,
-      "czas": 60,
-      "slug": ""
+      "czas": 60
     },
     {
       "id": "tw-peeling-sonoforeza",
@@ -469,22 +467,19 @@
       "id": "tw-gaba-nana",
       "nazwa": "Zabieg wygładzająco-liftingujący kwas GABA/NANA",
       "twarz": 219,
-      "czas": 60,
-      "slug": ""
+      "czas": 60
     },
     {
       "id": "tw-fotoodmladzanie",
       "nazwa": "Fotoodmładzanie twarzy z regeneracją komórkową",
       "twarz": 199,
-      "czas": 60,
-      "slug": ""
+      "czas": 60
     },
     {
       "id": "tw-kobido",
       "nazwa": "Masaż Kobido – japoński lifting twarzy",
       "twarz": 199,
-      "czas": 60,
-      "slug": ""
+      "czas": 60
     },
     {
       "id": "tw-rf-oczy",
@@ -498,13 +493,13 @@
     {
       "id": "dep-wasik",
       "nazwa": "Depilacja wąsika woskiem",
-      "cena": 30,
+      "cena": 41,
       "czas": 15
     },
     {
       "id": "dep-broda",
       "nazwa": "Depilacja brody woskiem",
-      "cena": 30,
+      "cena": 41,
       "czas": 15
     },
     {
@@ -628,5 +623,6 @@
       "czas": "2 dni, 16 h",
       "slug": "pakiety"
     }
-  ]
+  ],
+  "uwaga": "Ceny standardowe z Booksy (12.11.2026). Edytuj tu – strona czyta ten plik."
 }
