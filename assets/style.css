@@ -177,3 +177,34 @@ header.site .logo,header.site .tel,header.site .btn,header.site .social{flex-shr
 .booksy-hint b{color:var(--gold);font-weight:500}
 .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.thumbs img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border:1px solid var(--line3)}
 @media (max-width:760px){.thumbs{grid-template-columns:1fr 1fr}}
+
+/* schematy metod rzęs */
+.schemat{margin:-6px -8px 18px;padding:10px 6px 8px;background:radial-gradient(ellipse at 50% 100%,rgba(226,194,126,.07),transparent 70%);border-bottom:1px solid var(--line2)}
+.schemat.two{display:grid;grid-template-columns:1fr 1fr;gap:0 4px;margin-left:-14px;margin-right:-14px}
+.schemat figure{margin:0}.schemat img{width:100%;height:auto;display:block}
+.schemat figcaption,.schemat-duzy figcaption{font-size:13px;color:var(--muted2);text-align:center;margin-top:4px;line-height:1.4}
+.schemat-duzy{margin:0;padding:40px 28px 28px;display:flex;flex-direction:column;justify-content:center}
+.schemat-duzy img{width:100%;max-width:520px;height:auto;margin:0 auto}
+.schemat-duzy figcaption{font-size:15px;margin-top:18px}
+.legenda{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;margin:-8px 0 32px;font-size:14px;color:var(--muted)}
+.legenda span{display:inline-flex;align-items:center;gap:8px}
+.legenda i{display:inline-block}
+.l-nat{width:22px;height:4px;border-radius:2px;background:#8F8576}.l-ext{width:22px;height:2px;background:var(--gold)}
+.l-glue{width:9px;height:9px;border-radius:50%;background:#FFF4D6}
+
+/* logo */
+.logo img{height:56px;width:auto;display:block}
+@media (max-width:760px){.logo img{height:44px}}
+/* aktualności */
+.news{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.news img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.news-body{padding:24px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.news-body h3{margin:0;font-size:26px}
+.news-body p,.news-body li{margin:0;color:var(--muted);font-size:16px}
+.news-body ul{margin:0;padding-left:20px;line-height:1.8}
+.news-body .btn{align-self:flex-start;margin-top:auto}
+.news-meta{font-size:13px!important;letter-spacing:.06em;color:var(--muted2)!important;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.news-typ{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:11px;border:1px solid var(--line3);padding:3px 8px}
+.news.old{opacity:.55}
+.news-list{display:grid;gap:28px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+[hidden]{display:none!important}

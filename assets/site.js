@@ -18,6 +18,67 @@
     booksy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M9 15l2 2 4-4"/></svg>'
   };
   window.PE.socialHTML = u => `<div class="social"><a href="${u.instagram}" rel="noopener" aria-label="Instagram PerfectEye">${ICON.instagram}</a><a href="${u.facebook}" rel="noopener" aria-label="Facebook PerfectEye">${ICON.facebook}</a><a href="${u.booksy}" rel="noopener" data-conv="booksy" aria-label="PerfectEye na Booksy">${ICON.booksy}</a></div>`;
+  // --- ceny: jedno źródło (data/cennik.json, edytowany w CMS) ---
+  // <span data-c="id[.pole]|id2" data-od> – podmieniane na aktualną cenę na każdej stronie
+  let PRICE = null;
+  const priceText = el => {
+    const vals = el.dataset.c.split('|').map(ref => { const [id, f] = ref.split('.'); const r = PRICE[id]; return r ? r[f || 'cena'] : undefined; })
+      .filter(v => v !== undefined && v !== '' && v !== null);
+    if (!vals.length) return null;
+    const od = el.hasAttribute('data-od');
+    const nums = vals.map(v => (typeof v === 'number' ? v : (/^\d+$/.test(String(v).trim()) ? +v : null)));
+    let v = vals[0];
+    if (od && nums.every(n => n !== null)) v = Math.min(...nums);
+    return (od ? 'od ' : '') + v + ' zł';
+  };
+  const fillPrices = root => {
+    if (!PRICE) return;
+    let changed = false;
+    (root.querySelectorAll ? root : document).querySelectorAll('[data-c]').forEach(el => {
+      const t = priceText(el); if (t && el.textContent !== t) { el.textContent = t; changed = true; }
+    });
+    if (changed) refreshFaqLd();
+  };
+  // dane FAQ dla Google/AI odświeżane z treści strony (żeby zawierały aktualne ceny)
+  const refreshFaqLd = () => {
+    const qa = [...document.querySelectorAll('details')].map(d => [d.querySelector('summary')?.textContent.trim(), d.querySelector('p')?.textContent.trim()]).filter(x => x[0] && x[1] && !x[1].includes('['));
+    if (!qa.length) return;
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(sc => {
+      try { if (JSON.parse(sc.textContent)['@type'] === 'FAQPage') sc.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }); } catch (e) {}
+    });
+  };
+  PE.loadPrices = async () => {
+    if (PRICE) return PRICE;
+    const c = await PE.load('cennik'); const idx = {};
+    Object.values(c).forEach(rows => Array.isArray(rows) && rows.forEach(r => { if (r.id) idx[r.id] = r; }));
+    PRICE = idx; fillPrices(document);
+    new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => n.nodeType === 1 && (n.matches?.('[data-c]') ? fillPrices(n.parentNode || document) : fillPrices(n))))).observe(document.body, { childList: true, subtree: true });
+    return PRICE;
+  };
+
+  // --- aktualności (strona główna + /aktualnosci/) ---
+  const esc = t => String(t || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const fmtD = d => new Date(d + 'T12:00:00').toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' });
+  PE.newsSplit = posts => {
+    const today = new Date().toISOString().slice(0, 10);
+    const sorted = [...posts].sort((a, b) => (b.data || '').localeCompare(a.data || ''));
+    return { active: sorted.filter(p => !p.wazne_do || p.wazne_do >= today), archive: sorted.filter(p => p.wazne_do && p.wazne_do < today) };
+  };
+  PE.newsCard = (p, full, old) => {
+    const lines = String(p.tekst || '').split('\n').map(l => l.trim()).filter(Boolean);
+    let body = '', inList = false;
+    for (const l of lines) {
+      if (/^[•\-]/.test(l)) { if (!inList) { body += '<ul>'; inList = true; } body += `<li>${esc(l.replace(/^[•\-]\s*/, ''))}</li>`; }
+      else { if (inList) { body += '</ul>'; inList = false; } body += `<p>${esc(l)}</p>`; }
+    }
+    if (inList) body += '</ul>';
+    if (!full) body = `<p>${esc(lines[0] || '')}</p>`;
+    const img = p.zdjecie ? `<img src="${ROOT}${esc(p.zdjecie)}" alt="${esc(p.tytul)}" loading="lazy">` : '';
+    const meta = `<p class="news-meta"><span class="news-typ">${esc(p.typ)}</span>${p.data ? fmtD(p.data) : ''}${p.wazne_do ? ` · ${old ? 'zakończona' : 'ważne do ' + fmtD(p.wazne_do)}` : ''}</p>`;
+    const btn = p.link && !old ? `<a class="btn sm${full ? '' : ' ghost'}" href="${esc(p.link)}"${/booksy/.test(p.link) ? ' data-conv="booksy"' : ''}>${esc(p.link_tekst || 'Szczegóły')}</a>` : '';
+    return `<article class="card news${old ? ' old' : ''}">${img}<div class="news-body">${meta}<h3>${esc(p.tytul)}</h3>${body}${btn}</div></article>`;
+  };
+
   // --- nagłówek / stopka wspólne ---
   async function renderChrome() {
     const u = await PE.load('ustawienia');
@@ -28,10 +89,10 @@
       ? `<div class="topbar"><a href="${/booksy\.com/.test(u.pasek_promo_link || '') ? u.booksy : (u.pasek_promo_link || u.booksy)}">${u.pasek_promo}</a></div>` : '';
     const header = `
       <header class="site"><div class="wrap">
-        <a class="logo" href="${ROOT}"><b class="gold-text">PERFECT EYE</b><small>KATOWICE · OD ${u.rok_zalozenia}</small></a>
+        <a class="logo" href="${ROOT}" aria-label="PerfectEye – strona główna"><img src="${ROOT}zdjecia/logo.png" alt="PerfectEye" width="165" height="60"></a>
         <button class="navtoggle" aria-expanded="false" aria-controls="menu">Menu</button>
         <nav class="main" id="menu" aria-label="Menu główne">
-          ${link('rzesy/', 'Rzęsy i brwi')}${link('twarz/', 'Twarz')}${link('cennik/', 'Cennik')}${link('akademia/', 'Akademia', 'acc')}${link('portfolio/', 'Portfolio')}${link('o-nas/', 'O nas')}${link('kontakt/', 'Kontakt')}
+          ${link('rzesy/', 'Rzęsy i brwi')}${link('twarz/', 'Twarz')}${link('cennik/', 'Cennik')}${link('akademia/', 'Akademia', 'acc')}${link('aktualnosci/', 'Aktualności')}${link('portfolio/', 'Portfolio')}${link('o-nas/', 'O nas')}${link('kontakt/', 'Kontakt')}
         </nav>
         ${PE.socialHTML(u)}
         <a class="tel" href="tel:${u.telefon_link}" data-conv="tel">${u.telefon}</a>
@@ -87,5 +148,5 @@
     gtag('event', a.dataset.conv === 'booksy' ? 'klik_booksy' : 'klik_telefon', { link_url: a.href });
   });
 
-  document.addEventListener('DOMContentLoaded', () => { renderChrome(); consent(); });
+  document.addEventListener('DOMContentLoaded', () => { renderChrome(); consent(); PE.loadPrices(); });
 })();
